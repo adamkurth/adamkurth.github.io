@@ -1,26 +1,21 @@
-About Me
-========
+About
+======
 
-Hello! My name is John Doe. I'm a software developer with over 5 years of experience in the industry. I specialize in frontend development, particularly in React and Vue.js.
+.. raw:: html
 
-I have a passion for creating intuitive and dynamic user interfaces. In my free time, I enjoy contributing to open-source projects and exploring the latest web technologies.
-
-Education
----------
-
-- Bachelor of Science in Computer Science, University XYZ, 2015-2019
-
-Skills
-------
-
-- JavaScript (ES6+)
-- React.js
-- Vue.js
-- HTML5 & CSS3
-- Node.js
-- Git
-
-Contact Me
------------
-
-Feel free to reach out to me at johndoe@example.com.
+    <div class="section-intro">
+        <p>I have a diverse portfolio of projects ranging from experimental crystallography imaging to computational models for astronaut health metrics. Below is a brief overview of the key projects. For a more comprehensive insight, consider downloading the full CV.</p>
+        <div class="cv-buttons">
+            <a href="_static/CV.pdf" class="button" download="Adam_Kurth_CV.pdf">Download CV</a>
+            <button id="viewCVButton" class="button">View CV</button>
+        </div>
+        <div id="cvContainer" style="display: none;">
+            <embed src="_static/CV.pdf" type="application/pdf" width="100%" height="600px" />
+        </div>
+        <script>
+            document.getElementById('viewCVButton').addEventListener('click', function() {
+                var cvContainer = document.getElementById('cvContainer');
+                cvContainer.style.display = cvContainer.style.display === 'none' ? 'block' : 'none';
+            });
+        </script>
+    </div>
