@@ -71,14 +71,7 @@ html_theme_options = {
     'sidebar_collapse': False,  # whether the sidebar should be collapsible
     'footer_links': False,  # Disable the footer links
     'code_highlight': True,  # enable highlighting in code blocks
-    'social_links': [
-        {
-            "name": "GitHub",
-            "url": "https://github.com/adamkurth",
-            "icon": "fab fa-github",
-        },
-    ],
-
+    'show_sidebar': True,  # show the sidebar
 }
 
 
