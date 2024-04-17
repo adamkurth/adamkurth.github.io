@@ -62,18 +62,29 @@ exclude_patterns = []
 # a list of builtin themes.
 
 html_theme = "sphinxawesome_theme"
-html_permalinks = False
 html_theme_options = {
-    "index_sidebar_logo": False,
-    "github_url": "https://github.com/adamkurth",
-    "github_user": "adamkurth",
-    "github_repo": "sphinx-awesome-theme",
-    "github_button": True,
-    "github_type": "star",
-    "github_count": True,
-    "github_size": "large",
-    "github_color": "dark",
+    'color_primary': 'blue',  # the primary color of the theme
+    'color_accent': 'light-blue',  # the accent color of the theme    
+    'font_family': '"Fira Sans", sans-serif',  # the font family for body text
+    'heading_font_family': '"Fira Sans", sans-serif',  # the font family for headings
+    'sidebar_hide_name': True,  # hide the project name at the top of the sidebar
+    'sidebar_collapse': False,  # whether the sidebar should be collapsible
+    'footer_links': False,  # Disable the footer links
+    'code_highlight': True,  # enable highlighting in code blocks
+    'social_links': [
+        {
+            "name": "GitHub",
+            "url": "https://github.com/adamkurth",
+            "icon": "fab fa-github",
+        },
+    ],
+
 }
+
+
+html_title = "Home"
+html_permalinks = False
+
 html_static_path = ['_static']
 html_css_files = [
     'custom.css',

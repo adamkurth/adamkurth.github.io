@@ -19,33 +19,40 @@ Research
             });
         </script>
     </div>
-
+    
     <div class="project-entry">
         <div class="project-description">
-            <h3>NASA Internship <a href="https://github.com/adamkurth/nasa"><img src="_static/images/github-logo.png" alt="GitHub" class="github-logo" /></a></h3>
+            <h3>NASA Internship, Glenn Research Center <a href="https://github.com/adamkurth/nasa"><img src="_static/images/github-logo.png" alt="GitHub" class="github-logo" /></a></h3>
             <p><span class="highlight">Role:</span> Human Reliability Analyst at NASA Glenn Research Center</p>
             <p><span class="highlight">Period:</span> June 2024 - present</p>
             <p><span class="highlight">Description:</span> In this role, I am responsible for developing computational models to analyze astronaut health metrics, using advanced statistical methods. These models will provide quantitative risk assessments essential for mission planning and ensuring astronaut safety and performance for future missions, including Mars expeditions. My work involves extensive research and application of mathematical and statistical techniques, primarily using Python, to support NASA's mission-critical decision-making processes.</p>
         </div>
     </div>
 
-
     <div class="project-entry">
         <div class="project-description">
-            <h3>CXFEL Biodesign Institute <a href="https://github.com/adamkurth/cxls_hitfinder"><img src="_static/images/github-logo.png" alt="GitHub" class="github-logo" /></a></h3>
+            <h3>Biodesign Institute, CXFEL Beus Laser Laboratory <a href="https://github.com/adamkurth/cxls_hitfinder"><img src="_static/images/github-logo.png" alt="GitHub" class="github-logo" /></a></h3>
             
-            <p><span class="highlight">Role:</span> Graduate Research Assistant</p>
-            <p><span class="highlight">Period:</span> August 2024 - present</p>
-            <p><span class="highlight">Description:</span> As a Graduate Research Assistant, I focus on developing Python packages and tools tailored for high-throughput imaging and data analysis in experimental crystallography. My work supports biophysics studies at Arizona State University's Biodesign Institute CXFEL Beus Laser Laboratory, enhancing imaging techniques and analytical capabilities for cutting-edge research.</p>
-
-            <hr> <!-- Visual differentiation line -->
-
-            <p><span class="highlight">Role:</span> Research Aide and Data Analyst</p>
+            <p><span class="highlight">Roles:</span> Graduate Research Assistant, Research Aide, and Data Analyst</p>
             <p><span class="highlight">Period:</span> June 2023 - present</p>
-            <p><span class="highlight">Description:</span> In my role as a Research Aide and Data Analyst, I develop Python packages specifically designed for experimental crystallography imaging. Additionally, I assist in the data analysis necessary for biophysics studies at the Biodesign Institute. My efforts are aimed at improving the precision and effectiveness of data handling and analysis processes.</p>
+            <p><span class="highlight">Description:</span> In my capacity as both a Graduate Research Assistant and a Research Aide and Data Analyst, I engage in developing Python packages tailored for high-throughput experimental crystallography imaging and conduct data analysis to bolster biophysics research. My work at the CXFEL Beus Laser Laboratory is instrumental in advancing medical research through the application of cutting-edge imaging technologies and has been pivotal in enhancing my expertise in the computational aspects of biostatistics and biophysics.</p>
         </div>
     </div>
+    
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/HLF2sv78fiQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
+.. raw:: html
+    <hr> 
+
+    <div class="github-link" style="margin-top: 2rem; margin-bottom: 2rem;">
+        <p>For more of my work, follow me on GitHub:</p>
+        <a href="https://github.com/adamkurth" style="display: inline-block;">
+            <img src="https://img.shields.io/badge/Follow%20on%20GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="Follow on GitHub" style="margin-right: 10px;">
+        </a>
+    </div>
+
+
+.. raw:: html
 
     <style>
     .highlight {
@@ -74,6 +81,11 @@ Research
         height: 30px; /* Ensure the logo is square */
         margin-left: 10px;
     }
+    .project-description p {
+        font-size: 0.9rem;
+        line-height: 1.6; /* Improved readability */
+        margin-bottom: 0.5rem;
+    }
 
     .cv-buttons {
         margin-bottom: 1rem;
@@ -98,15 +110,8 @@ Research
         text-decoration: none; /* No underline on hover */
     }
 
-    .project-description p {
-        font-size: 0.9rem;
-        line-height: 1.6; /* Improved readability */
-        margin-bottom: 0.5rem;
-    }
-
-    /* Ensure that this <style> tag is placed within your .rst file's raw HTML block */
-
     </style>
 
+    <p>
     <p>To explore more about these projects, visit the project-specific links or reach out directly via the contact details provided on the site.</p>
 
