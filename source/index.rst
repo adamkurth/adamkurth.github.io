@@ -14,7 +14,7 @@ Hello, my name is **Adam Kurth**. I am an aspiring statistician with interests i
    :maxdepth: 2
    :caption: Contents:
 
-   index
    about
-   projects
+   research
+   publications
    contact

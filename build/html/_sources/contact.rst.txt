@@ -18,7 +18,7 @@ If you have any questions, comments, or suggestions, please feel free to reach o
 
     <div style="display: flex; flex-direction: row; align-items: center; justify-content: start; gap: 20px;">
         <div>
-            <a href="https://www.linkedin.com/in/adamkurth">
+            <a href="https://linkedin.com/in/adam-kurth">
                 <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn Profile" style="vertical-align: middle;">
             </a>
         </div>

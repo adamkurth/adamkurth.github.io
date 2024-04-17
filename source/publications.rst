@@ -1,29 +1,16 @@
-About
-======
+Publications
+============
 
 .. raw:: html
 
-    <div class="section-intro">
-        <p>I am an aspiring statistician with interests in biostatistics particularly, medical imaging technology. For research specific interests, please refer to the <a href="research.html">Research</a> page. </p>
-    </div>
-
-.. raw:: html
-    
-    <div class="section-intro">
-        <p>For a more comprehensive insight, consider downloading the full CV.</p>
-        <div class="cv-buttons">
-            <a href="_static/CV.pdf" class="button" download="Adam_Kurth_CV.pdf">Download CV</a>
-            <button id="viewCVButton" class="button">View CV</button>
+    <div class="project-entry">
+        <div class="project-description">
+            <h3>Research Manuscript <a href="https://github.com/adamkurth/IRT_MIRT_project"><img src="_static/images/github-logo.png" alt="GitHub" class="github-logo" /></a></h3>
+            <p><span class="highlight">Title:</span> "A Monte Carlo Comparison of the Efficacy of Mplus, flexMIRT, PROC IRT, ltm, and mirt in IRT Models Estimation."</p>
+            <p><span class="highlight">Status:</span> Upcoming</p>
+            <p><span class="highlight">Role:</span> Co-Author under supervision of Yi Zheng and Mark Reiser</p>
+            <p><span class="highlight">Description:</span> Managed simulations and contributed to research on Item Response Theory (IRT) estimation comparing several statistical software packages.</p>
         </div>
-        <div id="cvContainer" style="display: none;">
-            <embed src="_static/CV.pdf" type="application/pdf" width="100%" height="600px" />
-        </div>
-        <script>
-            document.getElementById('viewCVButton').addEventListener('click', function() {
-                var cvContainer = document.getElementById('cvContainer');
-                cvContainer.style.display = cvContainer.style.display === 'none' ? 'block' : 'none';
-            });
-        </script>
     </div>
 
 
