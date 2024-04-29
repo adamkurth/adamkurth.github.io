@@ -16,6 +16,28 @@ About
 
 .. raw:: html
 
+
+    <div class="article-preview">
+        <h3>Personal Story</h3>
+        <p>To read more about my journey and the challenges I have overcome, click on the article below:</p>
+        <a href="https://news.asu.edu/20240427-sun-devil-community-math-and-stats-grad-beats-odds-overcoming-serious-health-issues" target="_blank" class="embedded-link">
+            <div class="embedded-content">
+                <div class="embedded-image">
+                    <img src="_static/images/asuarticle.jpeg" alt="ASU Graduate Overcomes Health Challenges" style="width:100%; max-width:600px;">
+                </div>
+                <div class="embedded-info">
+                    <p class="embedded-title">ASU Graduate Overcomes Health Challenges</p>
+                    <p class="embedded-description">Click here to read how one student's determination and love for mathematics helped him overcome serious health issues.</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+
+
+
+.. raw:: html
+
     <div class="project-entry">
         <div class="project-description">
             <h3>Skills and Interests</h3>
@@ -142,5 +164,33 @@ About
     .cv-buttons {
         margin-top: 1rem; /* Adds space above the CV buttons */
         margin-bottom: 1rem; /* Adds space below the CV buttons */
+    }
+
+
+    .embedded-link {
+        text-decoration: none;
+        color: #000;
+        display: block;
+        border: 1px solid #ccc;
+        margin-top: 20px;
+    }
+
+    .embedded-content {
+        display: flex;
+        align-items: center;
+    }
+
+    .embedded-image img {
+        max-width: 100px;
+        margin-right: 10px;
+    }
+
+    .embedded-info {
+        padding: 10px;
+    }
+
+    .embedded-title {
+        font-weight: bold;
+        margin-bottom: 5px;
     }
     </style>
