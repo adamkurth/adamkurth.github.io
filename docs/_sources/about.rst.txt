@@ -33,6 +33,24 @@ About
         </a>
     </div>
 
+    <div class="article-preview">
+        <h3>Interview with Christian Gardner</h3>
+        <p>Join me as I discuss my path in the world of mathematics and statistics, exploring key insights and experiences that have shaped my academic and professional career. This talk is aimed at aspiring statisticians and mathematicians, offering a perspective on navigating the challenges and opportunities in the field:</p>
+        <a href="https://youtu.be/Ni4Asr7L30Y?si=HHB7Z2IaNPwNf6hy" target="_blank" class="embedded-link">
+            <div class="embedded-content">
+                <div class="embedded-image">
+                    <img src="_static/images/NASA_Logo_Flag.svg.png" alt="Journey Through Mathematics and Statistics" style="width:100%; max-width:600px;">
+                </div>
+                <div class="embedded-info">
+                    <p class="embedded-title">Interview: A Journey Through Mathematics and Statistics</p>
+                    <p class="embedded-description">Click here to watch the interview where we explore the intersections of mathematics, statistics, and space exploration through a personal and professional journey.</p>
+                </div>
+            </div>
+        </a>
+    </div>
+
+
+
 
 
 
@@ -193,4 +211,25 @@ About
         font-weight: bold;
         margin-bottom: 5px;
     }
+    .interview-section {
+    margin-top: 40px; /* Adjust spacing as needed */
+    }
+
+    .video-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio (height/width) */
+        padding-top: 30px;
+        height: 0;
+        overflow: hidden;
+    }
+
+    .video-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    
     </style>
