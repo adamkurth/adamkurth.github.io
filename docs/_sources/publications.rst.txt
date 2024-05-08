@@ -48,12 +48,11 @@ Publications and Presentations
             <p><span class="highlight">Affiliations:</span> The Biodesign Beus CXFEL Laboratory, Arizona State University; Department of Physics, Arizona State University</p>
             <p><span class="highlight">Abstract:</span> This paper explores the application of deep learning techniques at Arizona State University's (ASU) Compact X-ray Light Source (CXLS) to analyze experimental data from various modalities, primarily focusing on X-ray crystallography using the Dectris Eiger 4M detector. Traditional methods of predicting photon energy and sample-detector distance are challenged by dynamic scattering, intrinsic noise, and the CXLS low flux X-ray beam, prompting the need for more advanced solutions. Utilizing the CrystFEL software, we simulate diffraction images for protein 1IC6.pdb across a matrix of nine variable combinations involving photon energies and camera length. Our approach employs convolutional neural networks (CNNs), testing various architectures for binary classification of peak detection and prediction of experimental parameters. The scope of this research wishes to further expand this with modifications in the architecture to accommodate for spectroscopy data, although this is beyond the extent of this manuscript. By integrating different experimental conditions, we anticipate broader applications and improved experimental outcomes.</p>
             <div class="cv-buttons">
-                <a href="_static/2024_Deep_Learning_CXLS_Abstract.pdf" class="button" download="2024_Deep_Learning_CXLS_Abstract.pdf">Download Abstract (PDF)</a>
-                <a href="_static/Kurth_CXLS_Deep_Learning_Presentation.pptx" class="button" download="Kurth_CXLS_Deep_Learning_Presentation.pptx">Download Presentation (PPTX)</a>
-                <button id="viewDeepLearningPresentationButton" class="button">View Presentation</button>
+                <a href="_static/APM598_Final_Project_Report_Everett_Kurth.pdf" class="button" download="APM598_Final_Project_Report_Everett_Kurth.pdf">Download Report (PDF)</a>
+                <button id="viewDeepLearningPresentationButton" class="button">View Report</button>
             </div>
             <div id="deepLearningPresentationContainer" style="display: none;">
-                <embed src="_static/Kurth_CXLS_Deep_Learning_Presentation.pptx" type="application/pdf" width="100%" height="600px" />
+                <embed src="_static/APM598_Final_Project_Report_Everett_Kurth.pdf" type="application/pdf" width="100%" height="600px" />
             </div>
             <script>
                 document.getElementById('viewDeepLearningPresentationButton').addEventListener('click', function() {
