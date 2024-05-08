@@ -63,15 +63,6 @@ exclude_patterns = []
 
 html_theme = "sphinxawesome_theme"
 html_theme_options = {
-    'color_primary': 'blue',  # the primary color of the theme
-    'color_accent': 'light-blue',  # the accent color of the theme    
-    'font_family': '"Fira Sans", sans-serif',  # the font family for body text
-    'heading_font_family': '"Fira Sans", sans-serif',  # the font family for headings
-    'sidebar_hide_name': True,  # hide the project name at the top of the sidebar
-    'sidebar_collapse': False,  # whether the sidebar should be collapsible
-    'footer_links': False,  # Disable the footer links
-    'code_highlight': True,  # enable highlighting in code blocks
-    'show_sidebar': True,  # show the sidebar
 }
 
 
