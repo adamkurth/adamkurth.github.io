@@ -4,7 +4,7 @@ Research
 .. raw:: html
 
     <div class="section-intro">
-        <p>I have a diverse portfolio of projects ranging from experimental crystallography imaging to computational models for astronaut health metrics. Below is a brief overview of the key projects. For a more comprehensive insight, consider downloading the full CV.</p>
+        <p>I have a diverse portfolio of projects ranging from deploying Natural Language Processing (NLP) models at NASA, to research in experimental crystallography imaging. Below is a brief overview of the key projects. For a more comprehensive insight, consider downloading the full CV.</p>
         <div class="cv-buttons">
             <a href="_static/CV.pdf" class="button" download="Adam_Kurth_CV.pdf">Download CV</a>
             <button id="viewCVButton" class="button">View CV</button>
@@ -20,18 +20,38 @@ Research
         </script>
     </div>
 
+
+.. raw:: html
+
     <div class="content-section">
-        <h2 style="text-align:left;"><a href="https://www.nasa.gov/glenn" target="_blank">NASA's Glenn Research Center</a></h2>
+        <h2 style="text-align:left;"><a href="https://dt.asu.edu" target="_blank">Decision Theater</a></h2>
         <div class="project-entry">
             <div class="project-description" style="text-align:left;">
-                <h3>NASA Internship, Glenn Research Center</a> <a href="https://github.com/adamkurth/nasa"><img src="_static/images/github-logo.png" alt="GitHub" class="github-logo" /></a></h3>
-                <p><span class="highlight">Role:</span> Human Reliability Analyst at <a href="https://www.nasa.gov/glenn" target="_blank">NASA Glenn Research Center</a></p>
-                <p><span class="highlight">Period:</span> June 2024 - present</p>
-                <p><span class="highlight">Description:</span> In this role, I am responsible for developing computational models to analyze astronaut health metrics, using advanced statistical methods. These models will provide quantitative risk assessments essential for mission planning and ensuring astronaut safety and performance for future missions, including Mars expeditions. My work involves extensive research and application of mathematical and statistical techniques, primarily using Python, to support NASA's mission-critical decision-making processes. Engaged in the <a href="https://www1.grc.nasa.gov/space/human-research-program/" target="_blank">Human Space Program</a>, my efforts contribute to a broader understanding of human health and performance in space.</p>
+                <p><span class="highlight">Role:</span> Research Aide at <a href="https://dt.asu.edu" target="_blank">ASU's Decision Theater</a></p>
+                <p><span class="highlight">Period:</span> August 2024 - present</p>
+                <p><span class="highlight">Description:</span> As a Research Aide at Decision Theater at ASU, I contribute to a variety of research activities including writing briefs, conducting complex research using diverse methodologies, and maintaining comprehensive research documentation as well as contributing to some programming projects. Manage databases, run models and tools for presentations, and present findings to audiences in large part to support the decisions made during ASU Health's creation. My role also involves presentation and public speaking, writing, and editing material for publication and maintaining detailed research documentation.</p>
             </div>
         </div>
+    </div>
+
+.. raw:: html
+
+    <div style="text-align: center; margin: 20px 0;">
+        <img src="_static/images/dt.jpg" alt="Decision Theater Image" style="max-width: 100%; height: auto;" />
+    </div>
 
 
+.. raw:: html
+
+    <div class="content-section">
+        <h2 style="text-align:left;"><a href="https://www.nasa.gov/glenn" target="_blank">NASA Glenn Research Center (GRC) Intern</a></h2>
+        <div class="project-entry">
+            <div class="project-description" style="text-align:left;">
+                <p><span class="highlight">Role:</span> Human Reliability Analyst at <a href="https://www.nasa.gov/glenn" target="_blank">NASA Glenn Research Center</a></p>
+                <p><span class="highlight">Period:</span> June 2024 - August 2024</p>
+                <p><span class="highlight">Description:</span> In the preparation for future manned missions to Mars, I was in charge of developing and deploying NLP models to analyze description text and classify which human system category would be used. These models provide quantitative risk assessments essential for mission planning and ensuring astronaut safety and performance for long-duration missions. Under the <a href="https://www1.grc.nasa.gov/space/human-research-program/computational-modeling/" target="_blank"> crew health and performance probability risk assessment (CHP-PRA)</a> team, my work involved extensive research and application of various statistical machine learning techniques to aid in NASA's mission-critical decision-making processes. Under the wonderful guidance of <a href="https://www.researchgate.net/profile/Mona-Matar" target="_blank">Dr. Mona Matar</a> and <a href="https://scholar.google.com/citations?user=m7-RaZoAAAAJ&hl=en" target="_blank"> Dr. Hunter Rehm</a>  at NASA Glenn Research Center, I was able to contribute to the development of a novel NLP classification model that has since been integrated into NASA's mission planning processes.</p>
+            </div>
+        </div>
     
         <div style="text-align:left; margin-top:20px;">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/i_1m50vsQHs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -50,8 +70,10 @@ Research
             <div class="project-description" style="text-align:left;">
                 <h3>Biodesign Institute, CXFEL Beus Laser Laboratory</a> <a href="https://github.com/adamkurth/cxls_hitfinder"><img src="_static/images/github-logo.png" alt="GitHub" class="github-logo" /></a></h3>
                 <p><span class="highlight">Roles:</span> Graduate Research Assistant, Research Aide, and Data Analyst</p>
-                <p><span class="highlight">Period:</span> June 2023 - present</p>
-                <p><span class="highlight">Description:</span> In my capacity as both a Graduate Research Assistant and a Research Aide and Data Analyst, I engage in developing Python packages tailored for high-throughput experimental crystallography imaging and conduct data analysis to bolster biophysics research. My work at the <a href="https://biodesign.asu.edu/cxfel/" target="_blank">CXFEL Beus Laser Laboratory</a> is instrumental in advancing medical research through the application of cutting-edge imaging technologies and has been pivotal in enhancing my expertise in the computational aspects of biostatistics and biophysics.</p>
+                <p><span class="highlight">Period:</span> June 2023 - August 2024</p>
+                <p><span class="highlight">Description:</span> In my capacity as a Data Analyst and Research Aide, I engaged in developing Python packages tailored for high-throughput experimental crystallography imaging and conduct data analysis to bolster biophysics research.
+                <p><span class="highlight">Project 1:</span> One such project was a deep learning model called <a href="https://github.com/adamkurth/cxls_hitfinder/tree/main" target="_blank">cxls_hitfinder</a> that over thousands of images, the model learned the parameter combinations of interaction distance (cm) and photon energy (keV) that were used to generate the images. We also accounted for the realistic scattering patterns that would be seen in each discrete parameter combination. This model was pivotal in the development of a novel hit-finding algorithm that has since been integrated into the laboratory's data analysis pipeline.
+                <p><span class="highlight">Project 2:</span> This project, <a href="https://github.com/adamkurth/waterbackground_subtraction" target="_blank">waterbackground_subtraction</a>  involves a sophisticated analysis of improving the signal photon count estimates of both high and low flux diffraction images. The rational is: because the high flux X-ray is destructive to the crystal protein sample during data acquisition, we can infer the true number of photons at each Bragg peak from the low flux image. This tool will be used mainly for post-hoc analysis of large quantities of data collected during experiments. 
             </div>
         </div>
         

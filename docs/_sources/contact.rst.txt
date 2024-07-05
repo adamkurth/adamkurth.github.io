@@ -6,7 +6,7 @@ If you have any questions, comments, or suggestions, please feel free to reach o
 .. raw:: html
 
     <div class="contact-method" style="margin-bottom: 0.5rem;">
-        <a href="mailto:amkurth@asu.edu" style="display: inline-block; vertical-align: middle;">
+        <a href="mailto:adammkurth@gmail.com" style="display: inline-block; vertical-align: middle;">
             <img src="https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Email Adam Kurth">
         </a>
         <p style="display: inline-block; margin-left: 20px; vertical-align: middle;">
