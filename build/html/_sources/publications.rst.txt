@@ -52,7 +52,7 @@ Publications and Presentations
                 <button id="viewDeepLearningPresentationButton" class="button">View Report</button>
             </div>
             <div id="deepLearningPresentationContainer" style="display: none;">
-                <embed src="_static/APM598_Final_Project_Report_Everett_Kurth.pdf" type="application/pdf" width="100%" height="600px" />
+                <embed src="_static/APM598_Final_Project_Report_Everett_Kurth.pdf.pdf" type="application/pdf" width="100%" height="600px" />
             </div>
             <script>
                 document.getElementById('viewDeepLearningPresentationButton').addEventListener('click', function() {
