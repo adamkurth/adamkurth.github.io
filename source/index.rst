@@ -13,7 +13,7 @@ Welcome to Adam's Website
         <p style="margin-bottom: 2rem;">Feel free to explore my website to learn more about my research and professional journey. If you have any questions or if you'd like to discuss potential collaborations, please do not hesitate to reach out through the <a href="contact.html">contact</a> page.</p>
         </div>
     </div>
-        <img src="_static/images/NASA.jpeg" alt="Adam Kurth" style="float: center; width: 100%; max-width: 500px; margin-bottom: 2rem;" />
+        <img src="_static/images/nasa-2.jpeg" alt="Adam Kurth" style="float: center; width: 100%; max-width: 500px; margin-bottom: 2rem;" />
     <div>
 
 
