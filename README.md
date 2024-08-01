@@ -9,6 +9,7 @@ sphinx-build -b html source/ docs/
 Then push to the `main` branch.
 
 ```bash
+sphinx-build -b html source/ docs/
 git add docs/
 git commit -m "Update GitHub Pages documentation"
 git push origin main
