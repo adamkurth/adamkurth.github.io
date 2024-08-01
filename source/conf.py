@@ -65,7 +65,6 @@ html_theme = "sphinxawesome_theme"
 html_theme_options = {
 }
 
-
 html_title = "Home"
 html_permalinks = False
 
