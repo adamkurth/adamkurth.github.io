@@ -69,12 +69,6 @@ Research Experience
         <div style="text-align:left; margin-top:20px;">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/i_1m50vsQHs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         </div>
-
-        <div class="video-container" style="text-align:left; margin-top:40px;">
-            <div style="margin-top:20px;">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/yI5Iaf37hqY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
-        </div>
     </div>
 
     <div class="content-section">
