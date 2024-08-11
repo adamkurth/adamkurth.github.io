@@ -10,14 +10,32 @@ Publications and Presentations
             <p><span class="highlight">Title:</span> "A Monte Carlo Comparison of the Efficacy of Mplus, flexMIRT, PROC IRT, ltm, and mirt in IRT Models Estimation."</p>
             <p><span class="highlight">Status:</span> Upcoming</p>
             <p><span class="highlight">Role:</span> Co-Author under supervision of Yi Zheng and Mark Reiser</p>
-            <p><span class="highlight">Description:</span> Managed simulations and contributed to research on Item Response Theory (IRT) estimation comparing several statistical software packages.</p>
+            <p><span class="highlight">Description:</span> Engaging in various research projects with  <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=yvbSNG0AAAAJ" target="_blank">Yi Zheng</a> and <a href="https://search.asu.edu/profile/10762" target="_blank">Mark Reiser</a> focusing on managing preprocessing, conducting simulations, developing software, and documenting performance evaluations of R's mirt package under the 2PL IRT model. Created comprehensive visualizations of RMSE and bias metrics for all simulated subjects, enhancing the interpretability and impact of our findings.</p>
         </div>
     </div>
     
     <div class="project-entry">
         <div class="project-description">
-        <h2>Poster Presentations</h2>
-            <h3>Experimental Peak Intensity Analysis for CXLS<a href="https://github.com/adamkurth/waterbackground_subtraction"><img src="_static/images/github-logo.png" alt="GitHub" class="github-logo" /></a></h3>           
+        <h2>Presentations</h2>
+
+            <h3>NASA Investigator's Workshop (IWS) - Poster</h3>
+             <p><span class="highlight">Title:</span> "Using Natural Language Processing AI Tools to Analyze Mars Tasks"</p>
+             <p><span class="highlight">Date:</span> February, 2025</p>
+            <p><span class="highlight">Authors:</span> Kurth, A. M., Rehm, H., M. Matar.</p>
+            <p><span class="highlight">Affiliations:</span> NASA Glenn Research Center, CHP-PRA, PRisM.</p>
+            <p><span class="highlight">Abstract:</span> In order to plan and prepare for manned missions to Mars, it is essential to understand the tasks that astronauts will need to perform and incorporate this knowledge into our understanding of their performance capabilities. This research project utilizes Natural Language Processing (NLP) and Language Modeling (LM) techniques to assess the Mars Tasks (MT) and categorize them into various Human System Task Categories (HSTC). The goal is to accurately classify each MT with the correct HSTC, but given the severe class imbalance in the dataset, we will employ various techniques to improve the classification performance. The results of this research will be used to inform future mission planning and crew training.</p>
+            </p>
+
+            <h3>NASA GRC LTX Branch Meeting - Presentation</h3>
+             <p><span class="highlight">Title:</span> "Using Natural Language Processing AI Tools to Analyze Mars Tasks"</p>
+             <p><span class="highlight">Date:</span> August, 2025</p>
+            <p><span class="highlight">Authors:</span> Kurth, A. M., Rehm, H., M. Matar.</p>
+            <p><span class="highlight">Affiliations:</span> NASA Glenn Research Center, CHP-PRA, PRisM.</p>
+            <p><span class="highlight">Abstract:</span> Brief, non-technical introduction to concepts involved with HPM-NLP project for the CHP-PRA team.<p> 
+            In order to plan and prepare for manned missions to Mars, it is essential to understand the tasks that astronauts will need to perform and incorporate this knowledge into our understanding of their performance capabilities. This research project utilizes Natural Language Processing (NLP) and Language Modeling (LM) techniques to assess the Mars Tasks (MT) and categorize them into various Human System Task Categories (HSTC). The goal is to accurately classify each MT with the correct HSTC, but given the severe class imbalance in the dataset, we will employ various techniques to improve the classification performance. The results of this research will be used to inform future mission planning and crew training.</p>
+            </p>
+
+            <h3>Experimental Peak Intensity Analysis for CXLS - Poster<a href="https://github.com/adamkurth/waterbackground_subtraction"><img src="_static/images/github-logo.png" alt="GitHub" class="github-logo" /></a></h3>           
              <p><span class="highlight">Title:</span> "Peak Intensity Analysis for Serial Femtosecond Crystallography Experiments at the Compact X-ray Light Source."</p>
             <p><span class="highlight">Authors:</span> Kurth, A. M., Botha, S.</p>
             <p><span class="highlight">Affiliations:</span> CXFEL Labs Biodesign Institute, Arizona State University; Department of Physics, Arizona State University</p>
@@ -36,13 +54,13 @@ Publications and Presentations
                     posterPresentationContainer.style.display = posterPresentationContainer.style.display === 'none' ? 'block' : 'none';
                 });
             </script>
-            <p>Repository: <a href="https://github.com/adamkurth/IRT_MIRT_project" target="_blank">IRT_MIRT_project</a></p>
+            <p>Repository: <a href="https://github.com/adamkurth/waterbackground_subtraction" target="_blank">waterbackground_subtraction</a></p>
         </div>
     </div>
 
     <div class="project-entry">
         <div class="project-description"> 
-            <h3>Enhancing X-ray Peakfinding Through Deep Learning<a href="https://github.com/adamkurth/cxls_hitfinder"><img src="_static/images/github-logo.png" alt="GitHub" class="github-logo" /></a></h3>           
+            <h3>Enhancing X-ray Peakfinding Through Deep Learning - Poster<a href="https://github.com/adamkurth/cxls_hitfinder"><img src="_static/images/github-logo.png" alt="GitHub" class="github-logo" /></a></h3>           
             <p><span class="highlight">Title:</span> "Enhancing X-ray Peakfinding Through Deep Learning at the Compact X-ray Light Source (CXLS), Arizona State University"</p>
             <p><span class="highlight">Authors:</span> Kurth, A. M., Everett, E., Botha, S.</p>
             <p><span class="highlight">Affiliations:</span> The Biodesign Beus CXFEL Laboratory, Arizona State University; Department of Physics, Arizona State University</p>

@@ -39,7 +39,7 @@ About
         <a href="https://youtu.be/Ni4Asr7L30Y?si=HHB7Z2IaNPwNf6hy" target="_blank" class="embedded-link">
             <div class="embedded-content">
                 <div class="embedded-image">
-                    <img src="_static/images/NASA_Logo_Flag.svg.png" alt="Journey Through Mathematics and Statistics" style="width:100%; max-width:600px;">
+                    <img src="_static/images/nasa/NASA_Logo_Flag.svg.png" alt="Journey Through Mathematics and Statistics" style="width:100%; max-width:600px;">
                 </div>
                 <div class="embedded-info">
                     <p class="embedded-title">Interview: A Journey Through Mathematics and Statistics</p>
@@ -52,8 +52,6 @@ About
 
 
 
-
-
 .. raw:: html
 
     <div class="project-entry">
@@ -61,9 +59,34 @@ About
             <h3>Skills and Interests</h3>
             <p><span class="highlight">Mathematics/Statistics:</span> Real Analysis, probability, GLMs, Linear Models, regression analysis, deep learning, Natural Language Processing, linear algebra, geometry, calculus.</p>
             <p><span class="highlight">Programming Languages:</span> Python, R, Bash, Linux/Command Line (CL), MATALAB, Java, LaTeX. </p>
-            <p><span class="highlight">Technical Skills:</span> Scikit-Learn, PyTorch, Plotly, Git/GitHub/GitLab, Sphinx/GitPages, web development, and LaTeX.</p>
-            <p><span class="highlight">Interests:</span> Biostatistics, medical imaging, prediction, survival analysis, forecasting, informed decision making, deep/machine learning.</p>
+            <p><span class="highlight">Technical Skills:</span> PyTorch, Scikit-Learn, Plotly, Git/GitHub/GitLab, Sphinx/GitPages, and web development,  scientific writing.</p>
+            <p><span class="highlight">Interests:</span> Biostatistics, measure theory, medical imaging, prediction, survival analysis, forecasting, informed decision making, deep/machine learning.</p>
             <p>Beyond academics, I am a public speaker and enjoy philosophizing, reading, running, meditation, and playing guitar.</p>
+        </div>
+    </div>
+
+        <div class="project-entry">
+        <div class="project-description">
+            <h3>Scholarships & Awards</h3>
+            <p><span class="highlight">2024:</span> Rising Star Nomination NASA GRC,
+                <a href="https://childrenscancernetwork.org/programs/family-assistance/scholarships/" target="_blank"> John W. Luttrell Children’s Network Scholarship</a>.
+            </p>
+            <p><span class="highlight">2023:</span>
+                <a href="https://pcrf-kids.org/pcrf-scholarship/" target="_blank"> Pediatric Cancer Research Foundation Survivor Scholarship</a>,
+                <a href="https://www.getdisability.org/scholarship-fall-2023-winner-adam-kurth" target="_blank"> Coats & Todd Overcoming Disability Scholarship</a>,
+                <a href="https://www.ruthcheathamfoundation.org/meet-trcf-scholars" target="_blank"> Ruth Cheatham Foundation</a>,
+                <a href="https://www.healthproductsforyou.com/scholarship.html" target="_blank"> HPFY Beyond Disability Scholarship</a>.
+            </p>
+            <p><span class="highlight">2022:</span>
+                <a href="https://www.mytexasfirm.com/scholarship" target="_blank"> Burress Family Foundation Underdog Scholarship</a>,
+                <a href="https://childrenscancernetwork.org/programs/family-assistance/scholarships/" target="_blank"> John W. Luttrell Children’s Network Scholarship</a>.
+            </p>
+            <p><span class="highlight">2021:</span> ASU Alumni Legacy Scholarship</p>
+            <p><span class="highlight">Degrees:</span> 
+                Pursuing M.S. in Statistics, in the accelerated 4+1 program.<br>
+                Graduated Summa Cum Laude with a B.S. in Mathematics (Statistics).
+            </p>
+            <p><span class="highlight">Dean's List:</span> From Fall 2022 - present</p>
         </div>
     </div>
 
