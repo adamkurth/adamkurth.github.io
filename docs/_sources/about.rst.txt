@@ -16,9 +16,21 @@ About
 
 .. raw:: html
 
+    <div class="article-preview">
+        <h3>Voice of the Patient — AZBIO</h3>
+        <p>To watch my talk from the 2024 AZBIO Voice of the Patient event, please check out the video below:</p>
+        <p>In this talk, I share insights from my long-term health journey and personal reflections.</p>
+
+        <div style="text-align:left; margin-top:20px;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YXIQjwk-TZU?si=m9R0a5lY4wwQMtzp" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
 
     <div class="article-preview">
-        <h3>Personal Story</h3>
+        <h3>ASU Graduate Overcomes Health Challenges</h3>
         <p>To read more about my journey and the challenges I have overcome, click on the article below:</p>
         <a href="https://news.asu.edu/20240427-sun-devil-community-math-and-stats-grad-beats-odds-overcoming-serious-health-issues" target="_blank" class="embedded-link">
             <div class="embedded-content">
@@ -32,7 +44,7 @@ About
             </div>
         </a>
     </div>
-
+    
     <div class="article-preview">
         <h3>Interview with Christian Gardner</h3>
         <p>Join me as I discuss my path in the world of mathematics and statistics, exploring key insights and experiences that have shaped my academic and professional career. This talk is aimed at aspiring statisticians and mathematicians, offering a perspective on navigating the challenges and opportunities in the field:</p>
