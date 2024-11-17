@@ -4,7 +4,7 @@ Research Experience
 .. raw:: html
 
     <div class="section-intro">
-        <p>I have a diverse portfolio of projects ranging from deploying Natural Language Processing (NLP) models at NASA, to research in experimental crystallography imaging. Below is a brief overview of the key projects. For a more comprehensive insight, consider downloading the full CV.</p>
+        <p>I have a diverse portfolio of research experiences spanning bioinformatics, protein structure analysis, computational crystallography, NLP, and deep learning. Below is an overview of my key research positions. For more details, please download my full CV.</p>
         <div class="cv-buttons">
             <a href="_static/CV.pdf" class="button" download="Adam_Kurth_CV.pdf">Download CV</a>
             <button id="viewCVButton" class="button">View CV</button>
@@ -12,15 +12,32 @@ Research Experience
         <div id="cvContainer" style="display: none;">
             <embed src="_static/CV.pdf" type="application/pdf" width="100%" height="600px" />
         </div>
-        <script>
-            document.getElementById('viewCVButton').addEventListener('click', function() {
-                var cvContainer = document.getElementById('cvContainer');
-                cvContainer.style.display = cvContainer.style.display === 'none' ? 'block' : 'none';
-            });
-        </script>
     </div>
 
+
 .. raw:: html
+
+    <div class="content-section">
+        <h2 style="text-align:left;">Mathematical Sciences - Protein Structure Research</h2>
+        <div class="project-entry">
+            <div class="project-description" style="text-align:left;">
+                <p><span class="highlight">Role:</span> Research Assistant under <a href="https://www.elenipanagiotou.com">Dr. Eleni Panagiotou</a></p>
+                <p><span class="highlight">Period:</span> January 2024 - present</p>
+                <p><span class="highlight">Description:</span> Contributing to NIH-funded research that combines knot theory with molecular dynamics to study protein structure and function. Developing novel mathematical tools to analyze protein folding patterns and their relationship to diseases like Alzheimer's. Our innovative approach uses topology to predict protein misfolding in neurodegenerative diseases, with potential therapeutic applications.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <h2 style="text-align:left;"><a href="https://ugenome.io">UGenome AI</a></h2>
+        <div class="project-entry">
+            <div class="project-description" style="text-align:left;">
+                <p><span class="highlight">Role:</span> Bioinformatics Intern</p>
+                <p><span class="highlight">Period:</span> November 2024 - present</p>
+                <p><span class="highlight">Description:</span> Developing the MAXX software platform that generates customized reference genomes to enhance mutation calling sensitivity in next-generation sequencing (NGS) data. Implementing Python-based solutions for genomic analysis and variant calling, while working on computational pipelines for DNA and RNA mutant allele frequency quantification. Focus on optimizing variant detection algorithms for improved accuracy in genomic analysis.</p>
+            </div>
+        </div>
+    </div>
 
     <div class="content-section">
         <h2 style="text-align:left;">Computational Statistics Collaboration in Item Response Theory (IRT)</h2>
@@ -37,12 +54,12 @@ Research Experience
 .. raw:: html
 
     <div class="content-section">
-        <h2 style="text-align:left;"><a href="https://dt.asu.edu" target="_blank">Decision Theater</a></h2>
+        <h2 style="text-align:left;"><a href="https://dt.asu.edu">Decision Theater</a></h2>
         <div class="project-entry">
             <div class="project-description" style="text-align:left;">
-                <p><span class="highlight">Role:</span> Research Aide at <a href="https://dt.asu.edu" target="_blank">ASU's Decision Theater</a></p>
-                <p><span class="highlight">Period:</span> August 2024 - present</p>
-                <p><span class="highlight">Description:</span> As a Research Aide at Decision Theater at ASU, I contribute to a variety of research activities including writing briefs, conducting complex research using diverse methodologies, and maintaining comprehensive research documentation as well as contributing to some programming projects. Manage databases, run models and tools for presentations, and present findings to audiences in large part to support the decisions made during ASU Health's creation. My role also involves presentation and public speaking, writing, and editing material for publication and maintaining detailed research documentation.</p>
+                <p><span class="highlight">Role:</span> Research Aide</p>
+                <p><span class="highlight">Period:</span> August 2024 - January 2025</p>
+                <p><span class="highlight">Description:</span> Contributed to policy initiatives through research analysis, database management, and model execution. Focused on public health policy and decision-making during the planning of ASU Health, delivering presentations and preparing materials for publication.</p>
             </div>
         </div>
     </div>
