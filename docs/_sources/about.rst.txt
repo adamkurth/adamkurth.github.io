@@ -61,6 +61,21 @@ About
         </a>
     </div>
 
+    <div class="article-preview">
+        <h3>My liver transplant – Adam’s story</h3>
+        <p>To read more about my journey and my initial liver transplant story, click on the article below:</p>
+        <a href="https://phoenixchildrens.org/articles-faqs/blog/my-liver-transplant-adams-story" target="_blank" class="embedded-link">
+            <div class="embedded-content">
+                <div class="embedded-image">
+                    <img src="_static/images/pch.jpeg" alt="My liver transplant – Adam’s story" style="width:100%; max-width:600px;">
+                </div>
+                <div class="embedded-info">
+                    <p class="embedded-title">My liver transplant – Adam’s story</p>
+                    <p class="embedded-description">Meet Adam, an amazing teenager who recently endured some very serious health issues. However, his experience was a life lesson in disguise and Adam learned a lot about himself in the process...</p>
+                </div>
+            </div>
+        </a>
+    </div>
 
 
 
