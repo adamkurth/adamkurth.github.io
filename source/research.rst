@@ -1,10 +1,10 @@
-Research
-========
+Research Experience
+===================
 
 .. raw:: html
 
     <div class="section-intro">
-        <p>I have a diverse portfolio of projects ranging from deploying Natural Language Processing (NLP) models at NASA, to research in experimental crystallography imaging. Below is a brief overview of the key projects. For a more comprehensive insight, consider downloading the full CV.</p>
+        <p>I have a diverse portfolio of research experiences spanning bioinformatics, protein structure analysis, computational crystallography, NLP, and deep learning. Below is an overview of my key research positions. For more details, please download my full CV.</p>
         <div class="cv-buttons">
             <a href="_static/CV.pdf" class="button" download="Adam_Kurth_CV.pdf">Download CV</a>
             <button id="viewCVButton" class="button">View CV</button>
@@ -12,24 +12,54 @@ Research
         <div id="cvContainer" style="display: none;">
             <embed src="_static/CV.pdf" type="application/pdf" width="100%" height="600px" />
         </div>
-        <script>
-            document.getElementById('viewCVButton').addEventListener('click', function() {
-                var cvContainer = document.getElementById('cvContainer');
-                cvContainer.style.display = cvContainer.style.display === 'none' ? 'block' : 'none';
-            });
-        </script>
     </div>
 
 
 .. raw:: html
 
     <div class="content-section">
-        <h2 style="text-align:left;"><a href="https://dt.asu.edu" target="_blank">Decision Theater</a></h2>
+        <h2 style="text-align:left;">Mathematical Sciences - Protein Structure Research</h2>
         <div class="project-entry">
             <div class="project-description" style="text-align:left;">
-                <p><span class="highlight">Role:</span> Research Aide at <a href="https://dt.asu.edu" target="_blank">ASU's Decision Theater</a></p>
-                <p><span class="highlight">Period:</span> August 2024 - present</p>
-                <p><span class="highlight">Description:</span> As a Research Aide at Decision Theater at ASU, I contribute to a variety of research activities including writing briefs, conducting complex research using diverse methodologies, and maintaining comprehensive research documentation as well as contributing to some programming projects. Manage databases, run models and tools for presentations, and present findings to audiences in large part to support the decisions made during ASU Health's creation. My role also involves presentation and public speaking, writing, and editing material for publication and maintaining detailed research documentation.</p>
+                <p><span class="highlight">Role:</span> Research Assistant under <a href="https://www.elenipanagiotou.com">Dr. Eleni Panagiotou</a></p>
+                <p><span class="highlight">Period:</span> January 2024 - present</p>
+                <p><span class="highlight">Description:</span> Contributing to NIH-funded research that combines knot theory with molecular dynamics to study protein structure and function. Developing novel mathematical tools to analyze protein folding patterns and their relationship to diseases like Alzheimer's. Our innovative approach uses topology to predict protein misfolding in neurodegenerative diseases, with potential therapeutic applications.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <h2 style="text-align:left;"><a href="https://ugenome.io">UGenome AI</a></h2>
+        <div class="project-entry">
+            <div class="project-description" style="text-align:left;">
+                <p><span class="highlight">Role:</span> Bioinformatics Intern</p>
+                <p><span class="highlight">Period:</span> November 2024 - present</p>
+                <p><span class="highlight">Description:</span> Developing the MAXX software platform that generates customized reference genomes to enhance mutation calling sensitivity in next-generation sequencing (NGS) data. Implementing Python-based solutions for genomic analysis and variant calling, while working on computational pipelines for DNA and RNA mutant allele frequency quantification. Focus on optimizing variant detection algorithms for improved accuracy in genomic analysis.</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="content-section">
+        <h2 style="text-align:left;">Computational Statistics Collaboration in Item Response Theory (IRT)</h2>
+        <div class="project-entry">
+            <div class="project-description" style="text-align:left;">
+                <p><span class="highlight">Role:</span> Collaborator/Co-Author</p>
+                <p><span class="highlight">Period:</span> January 2023 - present</p>
+                <p><span class="highlight">Description:</span> Engaging in various research projects with  <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=yvbSNG0AAAAJ" target="_blank">Yi Zheng</a> and <a href="https://search.asu.edu/profile/10762" target="_blank">Mark Reiser</a> focusing on managing preprocessing, conducting simulations, developing software, and documenting performance evaluations of R's mirt package under the 2PL IRT model. Created comprehensive visualizations of RMSE and bias metrics for all simulated subjects, enhancing the interpretability and impact of our findings.</p>
+            </div>
+        </div>
+    </div>
+
+
+.. raw:: html
+
+    <div class="content-section">
+        <h2 style="text-align:left;"><a href="https://dt.asu.edu">Decision Theater</a></h2>
+        <div class="project-entry">
+            <div class="project-description" style="text-align:left;">
+                <p><span class="highlight">Role:</span> Research Aide</p>
+                <p><span class="highlight">Period:</span> August 2024 - January 2025</p>
+                <p><span class="highlight">Description:</span> Contributed to policy initiatives through research analysis, database management, and model execution. Focused on public health policy and decision-making during the planning of ASU Health, delivering presentations and preparing materials for publication.</p>
             </div>
         </div>
     </div>
@@ -49,18 +79,12 @@ Research
             <div class="project-description" style="text-align:left;">
                 <p><span class="highlight">Role:</span> Human Reliability Analyst at <a href="https://www.nasa.gov/glenn" target="_blank">NASA Glenn Research Center</a></p>
                 <p><span class="highlight">Period:</span> June 2024 - August 2024</p>
-                <p><span class="highlight">Description:</span> In the preparation for future manned missions to Mars, I was in charge of developing and deploying NLP models to analyze description text and classify which human system category would be used. These models provide quantitative risk assessments essential for mission planning and ensuring astronaut safety and performance for long-duration missions. Under the <a href="https://www1.grc.nasa.gov/space/human-research-program/computational-modeling/" target="_blank"> crew health and performance probability risk assessment (CHP-PRA)</a> team, my work involved extensive research and application of various statistical machine learning techniques to aid in NASA's mission-critical decision-making processes. Under the wonderful guidance of <a href="https://www.researchgate.net/profile/Mona-Matar" target="_blank">Dr. Mona Matar</a> and <a href="https://scholar.google.com/citations?user=m7-RaZoAAAAJ&hl=en" target="_blank"> Dr. Hunter Rehm</a>  at NASA Glenn Research Center, I was able to contribute to the development of a novel NLP classification model that has since been integrated into NASA's mission planning processes.</p>
+                <p><span class="highlight">Description:</span> In the preparation for future manned missions to Mars and aiding in the <a href="https://www.nasa.gov/hrp/" target="_blank">Human Research Program</a>,  I was in charge of developing and deploying NLP/Language Models to analyze astronaut tasks and predict which human system would be used. This effort provides quantifiable risk assessments essential for mission planning and ensuring astronaut safety, performance for long-duration missions. Under the <a href="https://www1.grc.nasa.gov/space/human-research-program/computational-modeling/" target="_blank"> Crew Health and Performance Probability Risk Assessment (CHP-PRA)</a> team, my work involved extensive research and application of various statistical machine learning techniques to best get the job done. This internship was under the wonderful guidance of <a href="https://www.researchgate.net/profile/Mona-Matar" target="_blank">Dr. Mona Matar</a> and <a href="https://scholar.google.com/citations?user=m7-RaZoAAAAJ&hl=en" target="_blank"> Dr. Hunter Rehm</a> both at NASA GRC.</p>
             </div>
         </div>
     
         <div style="text-align:left; margin-top:20px;">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/i_1m50vsQHs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-        </div>
-
-        <div class="video-container" style="text-align:left; margin-top:40px;">
-            <div style="margin-top:20px;">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/yI5Iaf37hqY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-            </div>
         </div>
     </div>
 
@@ -71,9 +95,9 @@ Research
                 <h3>Biodesign Institute, CXFEL Beus Laser Laboratory</a> <a href="https://github.com/adamkurth/cxls_hitfinder"><img src="_static/images/github-logo.png" alt="GitHub" class="github-logo" /></a></h3>
                 <p><span class="highlight">Roles:</span> Graduate Research Assistant, Research Aide, and Data Analyst</p>
                 <p><span class="highlight">Period:</span> June 2023 - August 2024</p>
-                <p><span class="highlight">Description:</span> In my capacity as a Data Analyst and Research Aide, I engaged in developing Python packages tailored for high-throughput experimental crystallography imaging and conduct data analysis to bolster biophysics research.
-                <p><span class="highlight">Project 1:</span> One such project was a deep learning model called <a href="https://github.com/adamkurth/cxls_hitfinder/tree/main" target="_blank">cxls_hitfinder</a> that over thousands of images, the model learned the parameter combinations of interaction distance (cm) and photon energy (keV) that were used to generate the images. We also accounted for the realistic scattering patterns that would be seen in each discrete parameter combination. This model was pivotal in the development of a novel hit-finding algorithm that has since been integrated into the laboratory's data analysis pipeline.
-                <p><span class="highlight">Project 2:</span> This project, <a href="https://github.com/adamkurth/waterbackground_subtraction" target="_blank">waterbackground_subtraction</a>  involves a sophisticated analysis of improving the signal photon count estimates of both high and low flux diffraction images. The rational is: because the high flux X-ray is destructive to the crystal protein sample during data acquisition, we can infer the true number of photons at each Bragg peak from the low flux image. This tool will be used mainly for post-hoc analysis of large quantities of data collected during experiments. 
+                <p><span class="highlight">Description:</span> In my capacity as a Data Analyst and Research Aide, I engaged in developing Python packages tailored for high-throughput experimental crystallography imaging and conduct data analysis to bolster biophysics research.</p>
+                <p><span class="highlight">Project 1:</span> One such project was a deep learning model called <a href="https://github.com/adamkurth/cxls_hitfinder/tree/main" target="_blank">cxls_hitfinder</a> that over thousands of images, the model learned the parameter combinations of interaction distance (cm) and photon energy (keV) that were used to generate the images. We also accounted for the realistic scattering patterns that would be seen in each discrete parameter combination. This model was pivotal in the development of a novel hit-finding algorithm that has since been integrated into the laboratory's data analysis pipeline.</p>
+                <p><span class="highlight">Project 2:</span> This project, <a href="https://github.com/adamkurth/waterbackground_subtraction" target="_blank">waterbackground_subtraction</a> involves a sophisticated analysis of improving the signal photon count estimates of both high and low flux diffraction images. The rational is: because the high flux X-ray is destructive to the crystal protein sample during data acquisition, we can infer the true number of photons at each Bragg peak from the low flux image. This tool will be used mainly for post-hoc analysis of large quantities of data collected during experiments.</p>
             </div>
         </div>
         

@@ -16,9 +16,21 @@ About
 
 .. raw:: html
 
+    <div class="article-preview">
+        <h3>Voice of the Patient — AZBIO</h3>
+        <p>To watch my talk from the 2024 AZBIO Voice of the Patient event, please check out the video below:</p>
+        <p>In this talk, I share insights from my long-term health journey and personal reflections.</p>
+
+        <div style="text-align:left; margin-top:20px;">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/YXIQjwk-TZU?si=m9R0a5lY4wwQMtzp" 
+                    title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
+                    encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+
 
     <div class="article-preview">
-        <h3>Personal Story</h3>
+        <h3>ASU Graduate Overcomes Health Challenges</h3>
         <p>To read more about my journey and the challenges I have overcome, click on the article below:</p>
         <a href="https://news.asu.edu/20240427-sun-devil-community-math-and-stats-grad-beats-odds-overcoming-serious-health-issues" target="_blank" class="embedded-link">
             <div class="embedded-content">
@@ -32,14 +44,14 @@ About
             </div>
         </a>
     </div>
-
+    
     <div class="article-preview">
         <h3>Interview with Christian Gardner</h3>
         <p>Join me as I discuss my path in the world of mathematics and statistics, exploring key insights and experiences that have shaped my academic and professional career. This talk is aimed at aspiring statisticians and mathematicians, offering a perspective on navigating the challenges and opportunities in the field:</p>
         <a href="https://youtu.be/Ni4Asr7L30Y?si=HHB7Z2IaNPwNf6hy" target="_blank" class="embedded-link">
             <div class="embedded-content">
                 <div class="embedded-image">
-                    <img src="_static/images/NASA_Logo_Flag.svg.png" alt="Journey Through Mathematics and Statistics" style="width:100%; max-width:600px;">
+                    <img src="_static/images/nasa/NASA_Logo_Flag.svg.png" alt="Journey Through Mathematics and Statistics" style="width:100%; max-width:600px;">
                 </div>
                 <div class="embedded-info">
                     <p class="embedded-title">Interview: A Journey Through Mathematics and Statistics</p>
@@ -49,8 +61,21 @@ About
         </a>
     </div>
 
-
-
+    <div class="article-preview">
+        <h3>My liver transplant – Adam’s story</h3>
+        <p>To read more about my journey and my initial liver transplant story, click on the article below:</p>
+        <a href="https://phoenixchildrens.org/articles-faqs/blog/my-liver-transplant-adams-story" target="_blank" class="embedded-link">
+            <div class="embedded-content">
+                <div class="embedded-image">
+                    <img src="_static/images/pch.jpeg" alt="My liver transplant – Adam’s story" style="width:100%; max-width:600px;">
+                </div>
+                <div class="embedded-info">
+                    <p class="embedded-title">My liver transplant – Adam’s story</p>
+                    <p class="embedded-description">Meet Adam, an amazing teenager who recently endured some very serious health issues. However, his experience was a life lesson in disguise and Adam learned a lot about himself in the process...</p>
+                </div>
+            </div>
+        </a>
+    </div>
 
 
 
@@ -61,9 +86,34 @@ About
             <h3>Skills and Interests</h3>
             <p><span class="highlight">Mathematics/Statistics:</span> Real Analysis, probability, GLMs, Linear Models, regression analysis, deep learning, Natural Language Processing, linear algebra, geometry, calculus.</p>
             <p><span class="highlight">Programming Languages:</span> Python, R, Bash, Linux/Command Line (CL), MATALAB, Java, LaTeX. </p>
-            <p><span class="highlight">Technical Skills:</span> Scikit-Learn, PyTorch, Plotly, Git/GitHub/GitLab, Sphinx/GitPages, web development, and LaTeX.</p>
-            <p><span class="highlight">Interests:</span> Biostatistics, medical imaging, prediction, survival analysis, forecasting, informed decision making, deep/machine learning.</p>
+            <p><span class="highlight">Technical Skills:</span> PyTorch, Scikit-Learn, Plotly, Git/GitHub/GitLab, Sphinx/GitPages, and web development,  scientific writing.</p>
+            <p><span class="highlight">Interests:</span> Biostatistics, measure theory, medical imaging, prediction, survival analysis, forecasting, informed decision making, deep/machine learning.</p>
             <p>Beyond academics, I am a public speaker and enjoy philosophizing, reading, running, meditation, and playing guitar.</p>
+        </div>
+    </div>
+
+        <div class="project-entry">
+        <div class="project-description">
+            <h3>Scholarships & Awards</h3>
+            <p><span class="highlight">2024:</span> Rising Star Nomination NASA GRC,
+                <a href="https://childrenscancernetwork.org/programs/family-assistance/scholarships/" target="_blank"> John W. Luttrell Children’s Network Scholarship</a>.
+            </p>
+            <p><span class="highlight">2023:</span>
+                <a href="https://pcrf-kids.org/pcrf-scholarship/" target="_blank"> Pediatric Cancer Research Foundation Survivor Scholarship</a>,
+                <a href="https://www.getdisability.org/scholarship-fall-2023-winner-adam-kurth" target="_blank"> Coats & Todd Overcoming Disability Scholarship</a>,
+                <a href="https://www.ruthcheathamfoundation.org/meet-trcf-scholars" target="_blank"> Ruth Cheatham Foundation</a>,
+                <a href="https://www.healthproductsforyou.com/scholarship.html" target="_blank"> HPFY Beyond Disability Scholarship</a>.
+            </p>
+            <p><span class="highlight">2022:</span>
+                <a href="https://www.mytexasfirm.com/scholarship" target="_blank"> Burress Family Foundation Underdog Scholarship</a>,
+                <a href="https://childrenscancernetwork.org/programs/family-assistance/scholarships/" target="_blank"> John W. Luttrell Children’s Network Scholarship</a>.
+            </p>
+            <p><span class="highlight">2021:</span> ASU Alumni Legacy Scholarship</p>
+            <p><span class="highlight">Degrees:</span> 
+                Pursuing M.S. in Statistics, in the accelerated 4+1 program.<br>
+                Graduated Summa Cum Laude with a B.S. in Mathematics (Statistics).
+            </p>
+            <p><span class="highlight">Dean's List:</span> From Fall 2022 - present</p>
         </div>
     </div>
 
