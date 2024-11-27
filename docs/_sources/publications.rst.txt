@@ -6,37 +6,48 @@ Publications and Presentations
     <div class="project-entry">
         <div class="project-description">
         <h2>Publications</h2>
-            <h3>Monte Carlo Efficacy of IRT Software Estimation<a href="https://github.com/adamkurth/IRT_MIRT_project"><img src="_static/images/github-logo.png" alt="GitHub" class="github-logo" /></a></h3>
+            <h3>Monte Carlo Efficacy of IRT Software Estimation - Second Author <a href="https://github.com/adamkurth/IRT_MIRT_project"><img src="_static/images/github-logo.png" alt="GitHub" class="github-logo" /></a></h3>
             <p><span class="highlight">Title:</span> "A Monte Carlo Comparison of the Efficacy of Mplus, flexMIRT, PROC IRT, ltm, and mirt in IRT Models Estimation."</p>
             <p><span class="highlight">Status:</span> Upcoming</p>
             <p><span class="highlight">Role:</span> Co-Author under supervision of Yi Zheng and Mark Reiser</p>
             <p><span class="highlight">Description:</span> Engaging in various research projects with  <a href="https://scholar.google.com/citations?view_op=list_works&hl=en&hl=en&user=yvbSNG0AAAAJ" target="_blank">Yi Zheng</a> and <a href="https://search.asu.edu/profile/10762" target="_blank">Mark Reiser</a> focusing on managing preprocessing, conducting simulations, developing software, and documenting performance evaluations of R's mirt package under the 2PL IRT model. Created comprehensive visualizations of RMSE and bias metrics for all simulated subjects, enhancing the interpretability and impact of our findings.</p>
+
+            <h3>ICCBM Conference - First Author</h3>
+            <p><span class="highlight">Title:</span> "Data Analysis tools for the Compact X-ray Light Source and Compact X-ray Free Electron Laser facilities at ASU"</p>
+            <p><span class="highlight">Authors:</span> Botha, S., Everett, E., Ketwala, G., Kurth, A., Verlarde, A., Grant T. G., Kirian, R.</p>
+            <p><span class="highlight">Conference:</span> 18th International Conferences for the crystallization of Biological Macromolecules (ICCBM)</p>
+            <p><span class="highlight">Date:</span> October, 2024</p>
+            <p><span class="highlight">Description:</span> Presentation on advanced data analysis tools developed for CXLS and CXFEL facilities at Arizona State University, showcasing innovative approaches to X-ray crystallography data processing and analysis.</p>
+
         </div>
     </div>
     
     <div class="project-entry">
         <div class="project-description">
         <h2>Presentations</h2>
-
-            <h3>NASA Investigator's Workshop (IWS) - Poster</h3>
-             <p><span class="highlight">Title:</span> "Using Natural Language Processing AI Tools to Analyze Mars Tasks"</p>
-             <p><span class="highlight">Date:</span> February, 2025</p>
+                
+            <h3>NASA Investigator's Workshop (IWS) - First Author, Poster</h3>
+            <p><span class="highlight">Title:</span> "Using Natural Language Processing AI Tools to Analyze Mars Tasks"</p>
+            <p><span class="highlight">Date:</span> February, 2025</p>
             <p><span class="highlight">Authors:</span> Kurth, A. M., Rehm, H., M. Matar.</p>
             <p><span class="highlight">Affiliations:</span> NASA Glenn Research Center, CHP-PRA, PRisM.</p>
-            <p><span class="highlight">Abstract:</span> In order to plan and prepare for manned missions to Mars, it is essential to understand the tasks that astronauts will need to perform and incorporate this knowledge into our understanding of their performance capabilities. This research project utilizes Natural Language Processing (NLP) and Language Modeling (LM) techniques to assess the Mars Tasks (MT) and categorize them into various Human System Task Categories (HSTC). The goal is to accurately classify each MT with the correct HSTC, but given the severe class imbalance in the dataset, we will employ various techniques to improve the classification performance. The results of this research will be used to inform future mission planning and crew training.</p>
-            </p>
+            <p><span class="highlight">Abstract:</span> Research utilizing Natural Language Processing and Language Modeling techniques to assess Mars Tasks and categorize them into Human System Task Categories. Addressing class imbalance challenges and improving classification performance for future mission planning and crew training.</p>
+                
+            <h3>NASA Investigator's Workshop (IWS) - Third Author</h3>
+            <p><span class="highlight">Title:</span> "Large language models and generative AI tools to depict human systems’ contribution to spaceflight tasks execution"</p>
+            <p><span class="highlight">Date:</span> February, 2025</p>
+            <p><span class="highlight">Authors:</span> Matar, M., Rehm, H., & Kurth, A. (3)</p>
+            <p><span class="highlight">Affiliations:</span> NASA Glenn Research Center, CHP-PRA, PRisM.</p>
 
             <h3>NASA GRC LTX Branch Meeting - Presentation</h3>
-             <p><span class="highlight">Title:</span> "Using Natural Language Processing AI Tools to Analyze Mars Tasks"</p>
-             <p><span class="highlight">Date:</span> August, 2025</p>
+            <p><span class="highlight">Title:</span> "Using Natural Language Processing AI Tools to Analyze Mars Tasks"</p>
+            <p><span class="highlight">Date:</span> August, 2025</p>
             <p><span class="highlight">Authors:</span> Kurth, A. M., Rehm, H., M. Matar.</p>
             <p><span class="highlight">Affiliations:</span> NASA Glenn Research Center, CHP-PRA, PRisM.</p>
-            <p><span class="highlight">Abstract:</span> Brief, non-technical introduction to concepts involved with HPM-NLP project for the CHP-PRA team.<p> 
-            In order to plan and prepare for manned missions to Mars, it is essential to understand the tasks that astronauts will need to perform and incorporate this knowledge into our understanding of their performance capabilities. This research project utilizes Natural Language Processing (NLP) and Language Modeling (LM) techniques to assess the Mars Tasks (MT) and categorize them into various Human System Task Categories (HSTC). The goal is to accurately classify each MT with the correct HSTC, but given the severe class imbalance in the dataset, we will employ various techniques to improve the classification performance. The results of this research will be used to inform future mission planning and crew training.</p>
-            </p>
+            <p><span class="highlight">Abstract:</span> Presentation on the application of Large Language Models and generative AI tools for depicting human systems' contribution to spaceflight tasks execution. Focus on using advanced AI techniques to better understand and classify Mars mission tasks.</p>
 
-            <h3>Experimental Peak Intensity Analysis for CXLS - Poster<a href="https://github.com/adamkurth/waterbackground_subtraction"><img src="_static/images/github-logo.png" alt="GitHub" class="github-logo" /></a></h3>           
-             <p><span class="highlight">Title:</span> "Peak Intensity Analysis for Serial Femtosecond Crystallography Experiments at the Compact X-ray Light Source."</p>
+            <h3>Experimental Peak Intensity Analysis for CXLS at BioXFEL - Poster<a href="https://github.com/adamkurth/waterbackground_subtraction"><img src="_static/images/github-logo.png" alt="GitHub" class="github-logo" /></a></h3>           
+            <p><span class="highlight">Title:</span> "Peak Intensity Analysis for Serial Femtosecond Crystallography Experiments at the Compact X-ray Light Source."</p>
             <p><span class="highlight">Authors:</span> Kurth, A. M., Botha, S.</p>
             <p><span class="highlight">Affiliations:</span> CXFEL Labs Biodesign Institute, Arizona State University; Department of Physics, Arizona State University</p>
             <p><span class="highlight">Abstract:</span> This research introduces innovative Bragg peak integration methods to advance peak intensity analysis in X-ray crystallography, crucial for accurate structure determination. The Compact X-ray light source (CXLS) will produce femtosecond duration X-ray pulses, allowing the collection of “diffraction before destruction” data. However, the flux will be limited compared to traditional full-scale X-ray free electron laser facilities, warranting the development of unique data analysis tools to fully exploit the unique capabilities of these sources for macromolecular crystallography. By improving the differentiation between signal and noise, coupled with a novel data collection scheme, our approach will enable experiments at the compact X-ray light source at Arizona State University.</p>
