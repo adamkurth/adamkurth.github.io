@@ -27,15 +27,15 @@ Publications and Presentations
         <h2>Presentations</h2>
                 
             <h3>NASA Investigator's Workshop (IWS) - First Author, Poster</h3>
-            <p><span class="highlight">Title:</span> "Using Natural Language Processing AI Tools to Analyze Mars Tasks"</p>
-            <p><span class="highlight">Date:</span> February, 2025</p>
+            <p><span class="highlight">Title:</span> "Developing Natural Language Processing and Supervised Learning Techniques to Classify Mars Tasks"</p>
+            <p><span class="highlight">Date:</span> January, 2025</p>
             <p><span class="highlight">Authors:</span> Kurth, A. M., Rehm, H., M. Matar.</p>
             <p><span class="highlight">Affiliations:</span> NASA Glenn Research Center, CHP-PRA, PRisM.</p>
             <p><span class="highlight">Abstract:</span> Research utilizing Natural Language Processing and Language Modeling techniques to assess Mars Tasks and categorize them into Human System Task Categories. Addressing class imbalance challenges and improving classification performance for future mission planning and crew training.</p>
                 
             <h3>NASA Investigator's Workshop (IWS) - Third Author</h3>
             <p><span class="highlight">Title:</span> "Large language models and generative AI tools to depict human systems’ contribution to spaceflight tasks execution"</p>
-            <p><span class="highlight">Date:</span> February, 2025</p>
+            <p><span class="highlight">Date:</span> January, 2025</p>
             <p><span class="highlight">Authors:</span> Matar, M., Rehm, H., & Kurth, A. (3)</p>
             <p><span class="highlight">Affiliations:</span> NASA Glenn Research Center, CHP-PRA, PRisM.</p>
 
