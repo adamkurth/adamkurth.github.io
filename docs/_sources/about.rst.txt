@@ -1,26 +1,24 @@
 About
-======
+=====
 
 .. raw:: html
 
     <div class="section-intro">
         <img src="_static/images/42242_SB11.JPG" alt="Adam Kurth" class="inline-photo" />
-        <p>As a passionate and driven graduate student at Arizona State University, I have dedicated my academic career to excelling in the fields of mathematics, statistics, and applications in data science. I am currently pursuing a Master's of Science in Statistics and hold a Bachelor's of Science in Mathematics (Statistics), with a minor in Philosophy. I am fascinated by ... practically everything in biostatistics, but particularly medical imaging, prediction, decision making, and forecasting.</p>
+        <p>I am an incoming Ph.D. student in Biostatistics at Brown University, with academic training in mathematics, statistics, and computational methods. I recently completed a B.S. in Mathematics (Statistics) and am currently finishing an accelerated M.S. in Statistics at Arizona State University. My research spans Bayesian modeling, causal inference, machine learning, and applications in biomedicine—particularly in neuroimaging, protein structure analysis, and clinical diagnostics. I am especially drawn to problems in predictive modeling, uncertainty quantification, and statistical decision-making in public health and medicine.</p>
     </div>
 
 .. raw:: html
 
     <div class="research-entry">
-         <p>For research specific interests, please refer to the <a href="research.html">Research</a> page.</p>
+        <p>For detailed research projects and roles, please visit the <a href="research.html">Research</a> page.</p>
     </div>
 
 .. raw:: html
 
     <div class="article-preview">
         <h3>Voice of the Patient — AZBIO</h3>
-        <p>To watch my talk from the 2024 AZBIO Voice of the Patient event, please check out the video below:</p>
         <p>In this talk, I share insights from my long-term health journey and personal reflections.</p>
-
         <div style="text-align:left; margin-top:20px;">
             <iframe width="560" height="315" src="https://www.youtube.com/embed/YXIQjwk-TZU?si=m9R0a5lY4wwQMtzp" 
                     title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; 
@@ -28,10 +26,9 @@ About
         </div>
     </div>
 
-
     <div class="article-preview">
         <h3>ASU Graduate Overcomes Health Challenges</h3>
-        <p>To read more about my journey and the challenges I have overcome, click on the article below:</p>
+        <p>Click below to read about my academic and health journey, featured by ASU News:</p>
         <a href="https://news.asu.edu/20240427-sun-devil-community-math-and-stats-grad-beats-odds-overcoming-serious-health-issues" target="_blank" class="embedded-link">
             <div class="embedded-content">
                 <div class="embedded-image">
@@ -39,15 +36,15 @@ About
                 </div>
                 <div class="embedded-info">
                     <p class="embedded-title">ASU Graduate Overcomes Health Challenges</p>
-                    <p class="embedded-description">Click here to read how one student's determination and love for mathematics helped him overcome serious health issues.</p>
+                    <p class="embedded-description">How one student's resilience and passion for statistics helped him succeed after serious health setbacks.</p>
                 </div>
             </div>
         </a>
     </div>
-    
+
     <div class="article-preview">
         <h3>Interview with Christian Gardner</h3>
-        <p>Join me as I discuss my path in the world of mathematics and statistics, exploring key insights and experiences that have shaped my academic and professional career. This talk is aimed at aspiring statisticians and mathematicians, offering a perspective on navigating the challenges and opportunities in the field:</p>
+        <p>In this conversation, I discuss my pathway through mathematics and statistics, the role of research in public health, and advice for aspiring statisticians.</p>
         <a href="https://youtu.be/Ni4Asr7L30Y?si=HHB7Z2IaNPwNf6hy" target="_blank" class="embedded-link">
             <div class="embedded-content">
                 <div class="embedded-image">
@@ -55,79 +52,67 @@ About
                 </div>
                 <div class="embedded-info">
                     <p class="embedded-title">Interview: A Journey Through Mathematics and Statistics</p>
-                    <p class="embedded-description">Click here to watch the interview where we explore the intersections of mathematics, statistics, and space exploration through a personal and professional journey.</p>
+                    <p class="embedded-description">Exploring the intersections of math, stats, and space exploration through personal and academic experiences.</p>
                 </div>
             </div>
         </a>
     </div>
 
+
+
     <div class="article-preview">
-        <h3>My liver transplant – Adam’s story</h3>
-        <p>To read more about my journey and my initial liver transplant story, click on the article below:</p>
+        <h3>My Liver Transplant – Adam’s Story</h3>
+        <p>My journey with transplantation and recovery, featured by Phoenix Children’s Hospital:</p>
         <a href="https://phoenixchildrens.org/articles-faqs/blog/my-liver-transplant-adams-story" target="_blank" class="embedded-link">
             <div class="embedded-content">
                 <div class="embedded-image">
                     <img src="_static/images/pch.jpeg" alt="My liver transplant – Adam’s story" style="width:100%; max-width:600px;">
                 </div>
                 <div class="embedded-info">
-                    <p class="embedded-title">My liver transplant – Adam’s story</p>
-                    <p class="embedded-description">Meet Adam, an amazing teenager who recently endured some very serious health issues. However, his experience was a life lesson in disguise and Adam learned a lot about himself in the process...</p>
+                    <p class="embedded-title">My Liver Transplant – Adam’s Story</p>
+                    <p class="embedded-description">Featured story on my experience overcoming life-threatening illness and pursuing education in STEM.</p>
                 </div>
             </div>
         </a>
     </div>
-
-
 
 .. raw:: html
 
     <div class="project-entry">
         <div class="project-description">
             <h3>Skills and Interests</h3>
-            <p><span class="highlight">Mathematics/Statistics:</span> Real Analysis, probability, GLMs, Linear Models, regression analysis, deep learning, Natural Language Processing, linear algebra, geometry, calculus.</p>
-            <p><span class="highlight">Programming Languages:</span> Python, R, Bash, Linux/Command Line (CL), MATALAB, Java, LaTeX. </p>
-            <p><span class="highlight">Technical Skills:</span> PyTorch, Scikit-Learn, Plotly, Git/GitHub/GitLab, Sphinx/GitPages, and web development,  scientific writing.</p>
-            <p><span class="highlight">Interests:</span> Biostatistics, measure theory, medical imaging, prediction, survival analysis, forecasting, informed decision making, deep/machine learning.</p>
-            <p>Beyond academics, I am a public speaker and enjoy philosophizing, reading, running, meditation, and playing guitar.</p>
+            <p><span class="highlight">Statistical Methods:</span> Bayesian inference, causal inference, regression, GLMs, survival analysis, NLP, machine learning.</p>
+            <p><span class="highlight">Mathematics:</span> Real analysis, topology (knot theory), numerical methods, probability, linear algebra.</p>
+            <p><span class="highlight">Programming:</span> Python, R, Bash, LaTeX, MATLAB, Java, Linux/CLI.</p>
+            <p><span class="highlight">Tools:</span> PyTorch, Scikit-Learn, Git, Sphinx, Tableau, Plotly, ggplot2.</p>
+            <p><span class="highlight">Research Areas:</span> Biostatistics, neuroimaging, protein folding, statistical computing, medical diagnostics, public health.</p>
+            <p>Outside research, I enjoy public speaking, reading philosophy, running, meditation, and guitar.</p>
         </div>
     </div>
 
-        <div class="project-entry">
+    <div class="project-entry">
         <div class="project-description">
             <h3>Scholarships & Awards</h3>
-            <p><span class="highlight">2024:</span> Rising Star Nomination NASA GRC,
-                <a href="https://childrenscancernetwork.org/programs/family-assistance/scholarships/" target="_blank"> John W. Luttrell Children’s Network Scholarship</a>.
-            </p>
-            <p><span class="highlight">2023:</span>
-                <a href="https://pcrf-kids.org/pcrf-scholarship/" target="_blank"> Pediatric Cancer Research Foundation Survivor Scholarship</a>,
-                <a href="https://www.getdisability.org/scholarship-fall-2023-winner-adam-kurth" target="_blank"> Coats & Todd Overcoming Disability Scholarship</a>,
-                <a href="https://www.ruthcheathamfoundation.org/meet-trcf-scholars" target="_blank"> Ruth Cheatham Foundation</a>,
-                <a href="https://www.healthproductsforyou.com/scholarship.html" target="_blank"> HPFY Beyond Disability Scholarship</a>.
-            </p>
-            <p><span class="highlight">2022:</span>
-                <a href="https://www.mytexasfirm.com/scholarship" target="_blank"> Burress Family Foundation Underdog Scholarship</a>,
-                <a href="https://childrenscancernetwork.org/programs/family-assistance/scholarships/" target="_blank"> John W. Luttrell Children’s Network Scholarship</a>.
-            </p>
-            <p><span class="highlight">2021:</span> ASU Alumni Legacy Scholarship</p>
-            <p><span class="highlight">Degrees:</span> 
-                Pursuing M.S. in Statistics, in the accelerated 4+1 program.<br>
-                Graduated Summa Cum Laude with a B.S. in Mathematics (Statistics).
-            </p>
-            <p><span class="highlight">Dean's List:</span> From Fall 2022 - present</p>
+            <p><span class="highlight">2024:</span> NASA GRC Rising Star Nomination, BioXFEL Scholar, John W. Luttrell Children’s Network Scholarship</p>
+            <p><span class="highlight">2023:</span> Pediatric Cancer Research Foundation Scholar, Coats & Todd Overcoming Disability Scholar, Ruth Cheatham Foundation, HPFY Scholar</p>
+            <p><span class="highlight">2022:</span> Burress Foundation Underdog Scholar, Luttrell Children’s Network Scholar</p>
+            <p><span class="highlight">2021:</span> ASU Alumni Legacy Scholar</p>
+            <p><span class="highlight">Degrees:</span> B.S. in Mathematics (Statistics), Summa Cum Laude; currently pursuing M.S. in Statistics (4+1 Program)</p>
+            <p><span class="highlight">Dean's List:</span> Fall 2022 – Present</p>
         </div>
     </div>
 
     <div class="project-entry">
         <div class="project-description">
             <h3>Vision for the Future</h3>
-            <p>I am excited about the next phase of my academic and professional journey, where I plan to pursue a Ph.D. in Biostatistics. I am eager to contribute to the field through innovative research and impactful projects, particularly in the applications of machine learning in medical imaging and diagnostics. I am looking forward to collaborating with like-minded individuals and organizations to drive positive change in the field.</p>
+            <p>As I begin my Ph.D. in Biostatistics, I aim to advance flexible and interpretable Bayesian methods for real-world health applications. My goal is to bridge theory and practice in service of population health and clinical decision-making, while mentoring the next generation of statistical scientists.</p>
         </div>
     </div>
 
 .. raw:: html
 
     <div class="section-intro">
-        <p>For a more comprehensive insight, consider downloading the full CV.</p>
+        <p>For a more comprehensive overview, download the full CV below:</p>
         <div class="cv-buttons">
             <a href="_static/CV.pdf" class="button" download="Adam_Kurth_CV.pdf">Download CV</a>
             <button id="viewCVButton" class="button">View CV</button>
@@ -142,7 +127,7 @@ About
             });
         </script>
     </div>
-
+    
     <style>
         .inline-photo {
             float: right;
