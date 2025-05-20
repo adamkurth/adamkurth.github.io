@@ -338,7 +338,7 @@ Master's Thesis
         .thesis-visualizations {
             margin: 2rem 0;
             padding: 1rem;
-            background-color: #495057;
+            background-color:rgb(145, 144, 144);
             border-radius: 5px;
         }
         
@@ -355,7 +355,7 @@ Master's Thesis
         
         .code-snippet {
             margin: 1.5rem 0;
-            background-color: #495057;
+            background-color:rgb(18, 18, 18);
             border-radius: 5px;
             padding: 1rem;
             overflow-x: auto;
@@ -384,7 +384,8 @@ Master's Thesis
         }
         
         .predictor-table th {
-            background-color: #495057;;
+            background-color: #343a40;
+            color: white;
             font-weight: 600;
         }
         
