@@ -9,22 +9,13 @@ Research Experience
                 <a href="_static/CV.pdf" class="button" download="Adam_Kurth_CV.pdf">Download CV</a>
             </div>
         </div>
-
-        <div class="content-section">
-            <h2>Banner-ASU Neuroscience Scholars Program</h2>
-            <div class="research-item">
-                <p><span class="highlight">Role:</span> Neuroscience Scholars Intern under Dr. Yi Su</p>
-                <p><span class="highlight">Period:</span> June 2025 – July 2025</p>
-                <p><span class="highlight">Description:</span> Developing and evaluating computational Bayesian imaging techniques to support early detection and progression modeling in neurodegenerative diseases. I focus on probabilistic modeling for structural and functional neuroimaging, with applications to Alzheimer’s disease.</p>
-            </div>
-        </div>
         
         <div class="content-section">
             <h2><a href="https://math.la.asu.edu/" target="_blank">School of Mathematical and Statistical Sciences</a></h2>
             <div class="research-item">
                 <p><span class="highlight">Role:</span> Research Assistant under <a href="https://www.elenipanagiotou.com" target="_blank">Dr. Eleni Panagiotou</a></p>
                 <p><span class="highlight">Period:</span> January 2025 – May 2025</p>
-                <p><span class="highlight">Description:</span> I developed statistical models integrating knot theory and topology to analyze protein structure behavior. This NIH-supported research aims to inform studies on neurodegenerative disease. I also collaborated with Dr. Wenwei Zheng to study intrinsically disordered proteins under varying conditions.</p>
+                <p><span class="highlight">Description:</span> I collaborated with Dr. Panagiotou and Dr. Wenwei Zheng on a project aimed at learning how topological features change under varying conditions. This involved running simulations and analyzing the results to understand the implications of these changes on protein structure and function.</p>
             </div>
         </div>
 

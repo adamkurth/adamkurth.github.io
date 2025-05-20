@@ -1,0 +1,394 @@
+Master's Thesis
+==============
+
+.. raw:: html
+
+    <div class="thesis-header">
+        <h2>Investigating Determinants of Birth Weight Using Bayesian Tree-Based Nonparametric Modeling</h2>
+        <p><strong>Advisor:</strong> Dr. P. Richard Hahn, Department of Mathematical & Statistical Sciences, Arizona State University</p>
+        <p><strong>Defense Date:</strong> May 22nd, 2025</p>
+        <div class="cv-buttons">
+            <a href="https://github.com/adamkurth/dm-cart" class="button" target="_blank">View on GitHub</a>
+            <a href="_static/ms-kurth-thesis.pdf" class="button" download>Download Thesis (PDF)</a>
+        </div>
+    </div>
+
+    <div class="thesis-overview">
+        <h3>Abstract</h3>
+        <p>Low birth weight (LBW) remains a critical public-health indicator, linked strongly with higher neonatal mortality, developmental delays, and lifelong chronic diseases. Using the 2021 U.S. Natality dataset (> 3 million births), this thesis develops a Bayesian, tree-based, nonparametric framework that models the full birth weight distribution and quantifies LBW risk.</p>
+        
+        <p>The raw dataset is condensed into 128 mutually exclusive classes defined by seven dichotomous maternal-infant predictors and 11 birth weight categories, comprised of 10% LBW quantile categories plus one aggregated normal weight category for added LBW granularity. Classification and Regression Trees (CART) are grown using the marginal Dirichlet-Multinomial likelihood as the splitting criterion. This criterion is equipped to handle sparse observations, with the Dirichlet hyperparameters informed by previous quantiles from the 2020 dataset to avoid "double dipping".</p>
+        
+        <p>Employing a two-tier parametric bootstrap resampling technique, a 10,000 tree ensemble is grown yielding highly stable prediction estimates. Maternal race, smoking status, and marital status consistently drive the initial LBW risk stratification, identifying Black, smoking, unmarried mothers among the highest-risk subgroups. When the analysis is restricted to LBW births only, infant sex and maternal age supersede smoking and marital status as key discriminators, revealing finer biological gradients of risk. Ensemble predictions are well calibrated, and 95% bootstrap percentile intervals achieve nominal coverage.</p>
+        
+        <p>The resulting framework combines the interpretability of decision trees with Bayesian uncertainty quantification, delivering actionable, clinically relevant insights for targeting maternal-health interventions among the most vulnerable subpopulations.</p>
+        
+        <div class="thesis-visualizations">
+            <h4>Key Visualizations</h4>
+            <div class="visualization-container">
+                <img src="_static/images/thesis/high_low_risk_full.pdf" alt="Aggregated Probiabilities for High vs. Low Risk (Full Model)" class="thesis-image">
+                <p><em>Figure 1: Aggregated probabilities for high vs. low risk (full model) using the 2021 dataset.</em></p>
+            </div>
+            <div class="visualization-container">
+                <img src="_static/images/thesis/high_low_risk_small.pdf" alt="Aggregated Probiabilities for High vs. Low Risk (LBW-only)" class="thesis-image">
+                <p><em>Figure 2: Aggregated probabilities for high vs. low risk (LBW-only) using the 2021 dataset.</em></p>
+            </div>
+            <div class="visualization-container">
+                <img src="_static/images/thesis/dm_tree2021.pdf" alt="DM-CART Decision Tree" class="thesis-image">
+                <p><em>Figure 3: DM-CART decision tree structure for the 2021 dataset (Full Model).</em></p>
+            </div>
+        </div>
+        <h3>Research Framework</h3>
+        <p>My Master's thesis developed a novel Bayesian nonparametric framework called DM-CART (Dirichlet-Multinomial Classification and Regression Trees) to analyze birth weight distributions and predict low birth weight (LBW) risk. This innovative approach combines the interpretability of decision trees with the uncertainty quantification of Bayesian methods to provide actionable clinical insights for maternal health interventions.</p>
+        
+        <h3>Significance and Contribution</h3>
+        <p>This research makes significant contributions to both methodological development and clinical applications:</p>
+        <ul>
+            <li><strong>Methodological:</strong> Extends traditional CART methodology with Dirichlet-Multinomial distributions for modeling count data with natural uncertainty quantification</li>
+            <li><strong>Statistical:</strong> Demonstrates the effectiveness of two-tier parametric bootstrap for generating stable ensemble predictions with valid percentile intervals</li>
+            <li><strong>Clinical:</strong> Provides actionable insights into maternal risk factors for low birth weight, aiding in early identification of at-risk pregnancies</li>
+            <li><strong>Public Health:</strong> Offers targeted intervention strategies by identifying the most vulnerable demographic subgroups</li>
+        </ul>
+        
+        <h3>Methodology</h3>
+        <h4>Data Sources and Preparation</h4>
+        <p>The study utilized U.S. Natality datasets from the National Center for Health Statistics (NCHS):</p>
+        <ul>
+            <li>2021 dataset (>3 million births) for model development</li>
+            <li>2020 dataset for informing Dirichlet priors and establishing quantile cutpoints</li>
+        </ul>
+        
+        <p>Key variables were transformed into seven binary predictors, creating 128 distinct maternal-infant profiles:</p>
+        <table class="predictor-table">
+            <tr>
+                <th>Variable</th>
+                <th>Source</th>
+                <th>Description</th>
+                <th>Encoding</th>
+            </tr>
+            <tr>
+                <td>BOY</td>
+                <td><code>sex</code></td>
+                <td>Infant sex</td>
+                <td>1 = Male, 0 = Female</td>
+            </tr>
+            <tr>
+                <td>MARRIED</td>
+                <td><code>dmar</code></td>
+                <td>Maternal marital status</td>
+                <td>1 = Married, 0 = Not married</td>
+            </tr>
+            <tr>
+                <td>BLACK</td>
+                <td><code>mrace15</code></td>
+                <td>Maternal race</td>
+                <td>1 = Black only, 0 = Other</td>
+            </tr>
+            <tr>
+                <td>OVER33</td>
+                <td><code>mager</code></td>
+                <td>Maternal age</td>
+                <td>1 = Over 33 years, 0 = 33 years or younger</td>
+            </tr>
+            <tr>
+                <td>HIGH SCHOOL</td>
+                <td><code>meduc</code></td>
+                <td>Maternal education</td>
+                <td>1 = High school graduate, 0 = Other</td>
+            </tr>
+            <tr>
+                <td>FULL PRENATAL</td>
+                <td><code>precare5</code></td>
+                <td>Prenatal care received</td>
+                <td>1 = Full prenatal care, 0 = Less than full care</td>
+            </tr>
+            <tr>
+                <td>SMOKER</td>
+                <td><code>cig_0</code></td>
+                <td>Smoking during pregnancy</td>
+                <td>1 = Any smoking, 0 = No smoking</td>
+            </tr>
+        </table>
+        
+        <p>Birth weights were categorized into quantile-based categories to enable detailed analysis of the LBW region:</p>
+        <ul>
+            <li><strong>Type 1 Analysis:</strong> 10 quantile-based categories for low birth weight (≤2500g) plus 1 category for normal birth weight (>2500g)</li>
+            <li><strong>Type 2 Analysis:</strong> 10 quantile-based categories focusing exclusively on low birth weight distributions</li>
+        </ul>
+        
+        <h4>Model Development: DM-CART</h4>
+        <p>The DM-CART algorithm extends traditional CART methodology by incorporating the Dirichlet-Multinomial distribution to model count data across birth weight categories:</p>
+        
+        <div class="code-snippet">
+            <pre><code class="r">log.dm.likelihood <- function(counts, alpha = 1) {
+        # 'counts': an integer vector (n_1, ..., n_K)
+        # 'alpha':  Dirichlet hyperparameter vector
+        
+        N <- sum(counts)
+        K <- length(counts)
+        
+        # sum of alpha over all categories
+        alpha_0 <- sum(alpha)
+
+        # Term 1: log Gamma(alpha_0) - log Gamma(N + alpha_0)
+        term1 <- lgamma(alpha_0) - lgamma(N + alpha_0)
+        
+        # Term 2: sum over k of [log Gamma(n_k + alpha) - log Gamma(alpha)]
+        term2 <- sum(lgamma(counts + alpha) - lgamma(alpha))
+        
+        # Total log-likelihood
+        ll <- term1 + term2
+
+        return(ll)
+    }</code></pre>
+        </div>
+        
+        <p>Key components of the implementation include:</p>
+        <ul>
+            <li><strong>Custom <code>rpart</code> Method:</strong> Extended R's <code>rpart</code> package with specialized functions for initialization, evaluation, splitting, and prediction using the Dirichlet-Multinomial model</li>
+            <li><strong>Splitting Criterion:</strong> Used marginal log-likelihood differences between splitting versus not splitting nodes</li>
+            <li><strong>Informed Priors:</strong> Utilized 2020 data to establish quantile-based cutpoints and inform Dirichlet hyperparameters</li>
+            <li><strong>Two-Tier Bootstrap:</strong> Implemented parametric bootstrap with 10,000 iterations for robust uncertainty quantification</li>
+        </ul>
+        
+        <h3>Key Technical Components</h3>
+        <h4>Tree Growing Process</h4>
+        <p>The DM-CART algorithm follows these key steps:</p>
+        <ol>
+            <li>Initialize the tree with the complete dataset of 128 maternal-infant profiles</li>
+            <li>Calculate the node-specific Dirichlet-Multinomial log-likelihood</li>
+            <li>Evaluate potential splits based on likelihood ratio improvement</li>
+            <li>Grow the tree to a specified depth (max depth = 8 in the primary analysis)</li>
+            <li>Apply Dirichlet smoothing to the predicted probabilities</li>
+            <li>Generate bootstrap ensembles for uncertainty quantification</li>
+        </ol>
+        
+        <div class="code-snippet">
+            <pre><code class="r">dm.method <- list(
+        init=myinit,      # Initialize the DM tree
+        eval=myeval,      # Evaluate nodes with DM likelihood
+        split=mysplit,    # DM likelihood ratio splitting
+        pred=mypred,      # Prediction with Dirichlet smoothing
+        method="dm"
+    )
+
+    # Control parameters
+    dm.control <- rpart.control(
+        minsplit=2,    # Minimum observations for a split
+        cp=0,          # Complexity parameter
+        maxdepth=8,    # Maximum tree depth
+        xval=0         # No cross-validation
+    )</code></pre>
+        </div>
+        
+        <h3>Key Findings</h3>
+        <h4>Risk Determinants</h4>
+        <p>The research revealed several important insights about determinants of low birth weight risk:</p>
+        <ul>
+            <li><strong>Primary Risk Factors:</strong> Three variables consistently appeared at the top of the decision trees and had the highest variable importance scores:
+                <ul>
+                    <li>Maternal race (BLACK): Black mothers showed significantly higher LBW risk</li>
+                    <li>Smoking status (SMOKER): Maternal smoking during pregnancy strongly increased LBW risk</li>
+                    <li>Marital status (MARRIED): Unmarried mothers had elevated LBW risk</li>
+                </ul>
+            </li>
+            <li><strong>High-Risk Profile:</strong> The highest-risk maternal-infant profile identified was:
+                <ul>
+                    <li>Black (BLACK=1)</li>
+                    <li>Unmarried (MARRIED=0)</li>
+                    <li>Smoker (SMOKER=1)</li>
+                    <li>Age ≤33 years (OVER33=0)</li>
+                    <li>Less than high school education (HIGH SCHOOL=0)</li>
+                    <li>Inadequate prenatal care (FULL PRENATAL=0)</li>
+                    <li>Female infant (BOY=0)</li>
+                </ul>
+            </li>
+            <li><strong>LBW-Specific Analysis:</strong> When analyzing only LBW births (Type 2 analysis), different patterns emerged:
+                <ul>
+                    <li>Infant sex (BOY) became a more important discriminator</li>
+                    <li>Maternal age (OVER33) gained significance</li>
+                    <li>Smoking and marital status decreased in relative importance</li>
+                </ul>
+            </li>
+            <li><strong>Risk Quantification:</strong> Bootstrap analysis provided well-calibrated estimates with 95% percentile intervals, allowing precise quantification of risk differences between subgroups</li>
+        </ul>
+        
+        <h4>Statistical Validation</h4>
+        <p>The DM-CART approach demonstrated excellent statistical properties:</p>
+        <ul>
+            <li><strong>Bootstrap Stability:</strong> Across 10,000 bootstrap samples, the key variables and tree structures showed high consistency</li>
+            <li><strong>percentile Interval Coverage:</strong> 95% percentile intervals achieved nominal coverage in validation tests</li>
+            <li><strong>Prediction Calibration:</strong> Predicted probabilities aligned well with observed frequencies</li>
+            <li><strong>Variable Importance Stability:</strong> Consistent variable rankings across different tree depths and bootstrap iterations</li>
+        </ul>
+        
+        <h3>Impact and Applications</h3>
+        <p>This framework provides multiple benefits for clinical practice and public health:</p>
+        <ul>
+            <li><strong>Clinical Decision Support:</strong> The DM-CART model can be used to screen mothers early in pregnancy, identifying those at highest risk for delivering low birth weight infants</li>
+            <li><strong>Intervention Targeting:</strong> Public health resources can be more effectively directed toward the identified high-risk subpopulations</li>
+            <li><strong>Risk Communication:</strong> The tree structure allows for intuitive explanation of risk factors to patients and healthcare providers</li>
+            <li><strong>Methodology Transfer:</strong> The DM-CART framework can be adapted to other clinical prediction contexts where count data and uncertainty quantification are important</li>
+            <li><strong>Health Disparities Research:</strong> The model highlights demographic factors contributing to birth weight disparities, informing policy interventions</li>
+        </ul>
+        
+        <h3>Technical Implementation</h3>
+        <p>The full implementation of DM-CART consists of several interrelated R scripts:</p>
+        <ul>
+            <li><strong>quantile.R:</strong> Establishes quantile-based cutpoints and creates informed priors from the 2020 dataset</li>
+            <li><strong>data_rebin.R:</strong> Preprocesses the 2021 dataset, creates the 128 maternal-infant profiles, and bins birth weights according to established quantiles</li>
+            <li><strong>dm-cart.R:</strong> Implements the core DM-CART algorithm, including:
+                <ul>
+                    <li>Custom extension of <code>rpart</code> with Dirichlet-Multinomial likelihood functions</li>
+                    <li>Two-tier parametric bootstrap for uncertainty quantification</li>
+                    <li>Risk prediction and visualization</li>
+                    <li>Variable importance analysis</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <p>For complete technical details and code implementation, visit the <a href="https://github.com/adamkurth/dm-cart" target="_blank">GitHub repository</a>.</p>
+        
+        <h3>Committee</h3>
+        <ul>
+            <li><strong>Advisor:</strong> Dr. P. Richard Hahn, Department of Mathematical & Statistical Sciences, Arizona State University</li>
+            <li><strong>Committee Members:</strong>
+                <ul>
+                    <li>Dr. Shuang Zhou, Department of Mathematical & Statistical Sciences, Arizona State University</li>
+                    <li>Dr. Shiwei Lan, Department of Mathematical & Statistical Sciences, Arizona State University</li>
+                </ul>
+            </li>
+        </ul>
+        
+        <h3>Conclusion</h3>
+        <p>The DM-CART framework represents a significant advancement in both methodological development and clinical application. By combining the interpretability of decision trees with the statistical rigor of Bayesian methods, this research delivers a powerful tool for maternal-infant risk stratification with potential for real-world clinical impact.</p>
+        
+        <p>This work demonstrates my ability to bridge sophisticated statistical methodology with practical healthcare applications, developing innovative solutions to complex public health challenges.</p>
+    </div>
+
+    <style>
+        .thesis-header {
+            margin-bottom: 2rem;
+            border-bottom: 1px solid #e9ecef;
+            padding-bottom: 1rem;
+        }
+        
+        .thesis-overview {
+            margin-top: 2rem;
+        }
+        
+        .thesis-image {
+            max-width: 100%;
+            height: auto;
+            margin: 1rem 0;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .thesis-overview h3 {
+            color: #0056b3;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+            font-weight: 500;
+        }
+        
+        .thesis-overview h4 {
+            color: #17a2b8;
+            margin-top: 1.5rem;
+            margin-bottom: 0.8rem;
+            font-weight: 500;
+        }
+        
+        .thesis-overview ul {
+            margin-bottom: 1.5rem;
+        }
+        
+        .thesis-overview li {
+            margin-bottom: 0.5rem;
+        }
+        
+        code {
+            background-color: #f8f9fa;
+            padding: 2px 4px;
+            border-radius: 4px;
+            font-family: monospace;
+            font-size: 0.9em;
+        }
+        
+        .cv-buttons {
+            margin: 1.5rem 0;
+        }
+        
+        .cv-buttons .button {
+            margin-right: 0.5rem;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border: none;
+            background-color: #17a2b8;
+            color: white;
+            border-radius: 0.25rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        .cv-buttons .button:hover {
+            background-color: #138496;
+        }
+        
+        .thesis-visualizations {
+            margin: 2rem 0;
+            padding: 1rem;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+        }
+        
+        .visualization-container {
+            margin-bottom: 1.5rem;
+        }
+        
+        .visualization-container p {
+            font-style: italic;
+            color: #495057;
+            margin-top: 0.5rem;
+            text-align: center;
+        }
+        
+        .code-snippet {
+            margin: 1.5rem 0;
+            background-color: #f8f9fa;
+            border-radius: 5px;
+            padding: 1rem;
+            overflow-x: auto;
+        }
+        
+        .code-snippet pre {
+            margin: 0;
+        }
+        
+        .code-snippet code {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: transparent;
+            padding: 0;
+        }
+        
+        .predictor-table {
+            width: 100%;
+            margin: 1.5rem 0;
+            border-collapse: collapse;
+        }
+        
+        .predictor-table th, .predictor-table td {
+            padding: 0.5rem;
+            border: 1px solid #dee2e6;
+            text-align: left;
+        }
+        
+        .predictor-table th {
+            background-color: #e9ecef;
+            font-weight: 600;
+        }
+        
+        .predictor-table tr:nth-child(even) {
+            background-color: #f8f9fa;
+        }
+    </style>

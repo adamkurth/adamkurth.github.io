@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+
+<html :class="{'dark': darkMode === 'dark' || (darkMode === 'system' &amp;&amp; window.matchMedia('(prefers-color-scheme: dark)').matches)}" class="scroll-smooth" data-content_root="./" lang="en" x-data="{ darkMode: localStorage.getItem('darkMode') || localStorage.setItem('darkMode', 'system'), activeSection: '' }" x-init="$watch('darkMode', val =&gt; localStorage.setItem('darkMode', val))">
+<head>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<meta charset="utf-8"/>
+<meta content="white" media="(prefers-color-scheme: light)" name="theme-color"/>
+<meta content="black" metia="(prefers-color-scheme: dark)" name="theme-color"/>
+<meta content="Docutils 0.18.1: http://docutils.sourceforge.net/" name="generator"/>
+<title>Master’s Thesis | Home</title>
+<meta content="Master’s Thesis | Home" property="og:title"/>
+<meta content="Master’s Thesis | Home" name="twitter:title"/>
+<link href="_static/pygments.css?v=b76e3c8a" rel="stylesheet" type="text/css"/>
+<link href="_static/theme.css?v=1c6a6288" rel="stylesheet" type="text/css"/>
+<link href="_static/custom.css?v=b87b5f69" rel="stylesheet" type="text/css"/>
+<link href="_static/custom.css?v=b87b5f69" rel="stylesheet" type="text/css"/>
+<link href="search.html" rel="search" title="Search"/>
+<link href="genindex.html" rel="index" title="Index"/>
+<link href="publications.html" rel="next" title="Publications and Presentations"/>
+<link href="research.html" rel="prev" title="Research Experience"/>
+<script>
+    <!-- Prevent Flash of wrong theme -->
+      const userPreference = localStorage.getItem('darkMode');
+      let mode;
+      if (userPreference === 'dark' || window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        mode = 'dark';
+        document.documentElement.classList.add('dark');
+      } else {
+        mode = 'light';
+      }
+      if (!userPreference) {localStorage.setItem('darkMode', mode)}
+    </script>
+</head>
+<body :class="{ 'overflow-hidden': showSidebar }" class="min-h-screen font-sans antialiased bg-background text-foreground" x-data="{ showSidebar: false }">
+<div @click.self="showSidebar = false" class="fixed inset-0 z-50 overflow-hidden bg-background/80 backdrop-blur-sm" x-cloak="" x-show="showSidebar"></div><div class="relative flex flex-col min-h-screen" id="page"><a class="absolute top-0 left-0 z-[100] block bg-background p-4 text-xl transition -translate-x-full opacity-0 focus:translate-x-0 focus:opacity-100" href="#content">
+      Skip to content
+    </a><header class="sticky top-0 z-40 w-full border-b shadow-sm border-border supports-backdrop-blur:bg-background/60 bg-background/95 backdrop-blur"><div class="container flex items-center h-14">
+<div class="hidden mr-4 md:flex">
+<a class="flex items-center mr-6" href="index.html"><span class="hidden font-bold sm:inline-block text-clip whitespace-nowrap">Home</span>
+</a></div><button @click="showSidebar = true" class="inline-flex items-center justify-center h-10 px-0 py-2 mr-2 text-base font-medium transition-colors rounded-md hover:text-accent-foreground hover:bg-transparent md:hidden" type="button">
+<svg aria-hidden="true" fill="currentColor" height="24" viewbox="0 96 960 960" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M152.587 825.087q-19.152 0-32.326-13.174t-13.174-32.326q0-19.152 13.174-32.326t32.326-13.174h440q19.152 0 32.326 13.174t13.174 32.326q0 19.152-13.174 32.326t-32.326 13.174h-440Zm0-203.587q-19.152 0-32.326-13.174T107.087 576q0-19.152 13.174-32.326t32.326-13.174h320q19.152 0 32.326 13.174T518.087 576q0 19.152-13.174 32.326T472.587 621.5h-320Zm0-203.587q-19.152 0-32.326-13.174t-13.174-32.326q0-19.152 13.174-32.326t32.326-13.174h440q19.152 0 32.326 13.174t13.174 32.326q0 19.152-13.174 32.326t-32.326 13.174h-440ZM708.913 576l112.174 112.174q12.674 12.674 12.674 31.826t-12.674 31.826Q808.413 764.5 789.261 764.5t-31.826-12.674l-144-144Q600 594.391 600 576t13.435-31.826l144-144q12.674-12.674 31.826-12.674t31.826 12.674q12.674 12.674 12.674 31.826t-12.674 31.826L708.913 576Z"></path>
+</svg>
+<span class="sr-only">Toggle navigation menu</span>
+</button>
+<div class="flex items-center justify-between flex-1 space-x-2 sm:space-x-4 md:justify-end">
+<div class="flex-1 w-full md:w-auto md:flex-none"><form @keydown.k.window.meta="$refs.search.focus()" action="search.html" class="relative flex items-center group" id="searchbox" method="get">
+<input aria-label="Search the docs" class="inline-flex items-center font-medium transition-colors bg-transparent focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 ring-offset-background border border-input hover:bg-accent focus:bg-accent hover:text-accent-foreground focus:text-accent-foreground hover:placeholder-accent-foreground py-2 px-4 relative h-9 w-full justify-start rounded-[0.5rem] text-sm text-muted-foreground sm:pr-12 md:w-40 lg:w-64" id="search-input" name="q" placeholder="Search ..." type="search" x-ref="search"/>
+<kbd class="pointer-events-none absolute right-1.5 top-2 hidden h-5 select-none text-muted-foreground items-center gap-1 rounded border border-border bg-muted px-1.5 font-mono text-[10px] font-medium opacity-100 sm:flex group-hover:bg-accent group-hover:text-accent-foreground">
+<span class="text-xs">⌘</span>
+    K
+  </kbd>
+</form>
+</div>
+<nav class="flex items-center space-x-1">
+<button @click="darkMode = darkMode === 'light' ? 'dark' : 'light'" class="relative inline-flex items-center justify-center px-0 text-sm font-medium transition-colors rounded-md hover:bg-accent hover:text-accent-foreground h-9 w-9" type="button">
+<svg class="absolute transition-all scale-100 rotate-0 dark:-rotate-90 dark:scale-0" fill="currentColor" height="24" viewbox="0 96 960 960" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M480 685q45.456 0 77.228-31.772Q589 621.456 589 576q0-45.456-31.772-77.228Q525.456 467 480 467q-45.456 0-77.228 31.772Q371 530.544 371 576q0 45.456 31.772 77.228Q434.544 685 480 685Zm0 91q-83 0-141.5-58.5T280 576q0-83 58.5-141.5T480 376q83 0 141.5 58.5T680 576q0 83-58.5 141.5T480 776ZM80 621.5q-19.152 0-32.326-13.174T34.5 576q0-19.152 13.174-32.326T80 530.5h80q19.152 0 32.326 13.174T205.5 576q0 19.152-13.174 32.326T160 621.5H80Zm720 0q-19.152 0-32.326-13.174T754.5 576q0-19.152 13.174-32.326T800 530.5h80q19.152 0 32.326 13.174T925.5 576q0 19.152-13.174 32.326T880 621.5h-80Zm-320-320q-19.152 0-32.326-13.174T434.5 256v-80q0-19.152 13.174-32.326T480 130.5q19.152 0 32.326 13.174T525.5 176v80q0 19.152-13.174 32.326T480 301.5Zm0 720q-19.152 0-32.326-13.17Q434.5 995.152 434.5 976v-80q0-19.152 13.174-32.326T480 850.5q19.152 0 32.326 13.174T525.5 896v80q0 19.152-13.174 32.33-13.174 13.17-32.326 13.17ZM222.174 382.065l-43-42Q165.5 327.391 166 308.239t13.174-33.065q13.435-13.674 32.587-13.674t32.065 13.674l42.239 43q12.674 13.435 12.555 31.706-.12 18.272-12.555 31.946-12.674 13.674-31.445 13.413-18.772-.261-32.446-13.174Zm494 494.761-42.239-43q-12.674-13.435-12.674-32.087t12.674-31.565Q686.609 756.5 705.38 757q18.772.5 32.446 13.174l43 41.761Q794.5 824.609 794 843.761t-13.174 33.065Q767.391 890.5 748.239 890.5t-32.065-13.674Zm-42-494.761Q660.5 369.391 661 350.62q.5-18.772 13.174-32.446l41.761-43Q728.609 261.5 747.761 262t33.065 13.174q13.674 13.435 13.674 32.587t-13.674 32.065l-43 42.239q-13.435 12.674-31.706 12.555-18.272-.12-31.946-12.555Zm-495 494.761Q165.5 863.391 165.5 844.239t13.674-32.065l43-42.239q13.435-12.674 32.087-12.674t31.565 12.674Q299.5 782.609 299 801.38q-.5 18.772-13.174 32.446l-41.761 43Q231.391 890.5 212.239 890t-33.065-13.174ZM480 576Z"></path>
+</svg>
+<svg class="absolute transition-all scale-0 rotate-90 dark:rotate-0 dark:scale-100" fill="currentColor" height="24" viewbox="0 96 960 960" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M480 936q-151 0-255.5-104.5T120 576q0-138 90-239.5T440 218q25-3 39 18t-1 44q-17 26-25.5 55t-8.5 61q0 90 63 153t153 63q31 0 61.5-9t54.5-25q21-14 43-1.5t19 39.5q-14 138-117.5 229T480 936Zm0-80q88 0 158-48.5T740 681q-20 5-40 8t-40 3q-123 0-209.5-86.5T364 396q0-20 3-40t8-40q-78 32-126.5 102T200 576q0 116 82 198t198 82Zm-10-270Z"></path>
+</svg>
+</button>
+</nav>
+</div>
+</div>
+</header>
+<div class="flex-1"><div class="container flex-1 items-start md:grid md:grid-cols-[220px_minmax(0,1fr)] md:gap-6 lg:grid-cols-[240px_minmax(0,1fr)] lg:gap-10"><aside :aria-hidden="!showSidebar" :class="{ 'translate-x-0': showSidebar }" class="fixed inset-y-0 left-0 md:top-14 z-50 md:z-30 bg-background md:bg-transparent transition-all duration-100 -translate-x-full md:translate-x-0 ml-0 p-6 md:p-0 md:-ml-2 md:h-[calc(100vh-3.5rem)] w-5/6 md:w-full shrink-0 overflow-y-auto border-r border-border md:sticky" id="left-sidebar">
+<a class="!justify-start text-sm md:!hidden bg-background" href="index.html"><span class="font-bold text-clip whitespace-nowrap">Home</span>
+</a>
+<div class="relative overflow-hidden md:overflow-auto my-4 md:my-0 h-[calc(100vh-8rem)] md:h-auto">
+<div class="overflow-y-auto h-full w-full relative pr-6"><nav class="table w-full min-w-full my-6 lg:my-8">
+<p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="about.html">About</a></li>
+<li class="toctree-l1"><a class="reference internal" href="research.html">Research Experience</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Master’s Thesis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="publications.html">Publications and Presentations</a></li>
+<li class="toctree-l1"><a class="reference internal" href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</div>
+</div>
+<button @click="showSidebar = false" class="absolute md:hidden right-4 top-4 rounded-sm opacity-70 transition-opacity hover:opacity-100" type="button">
+<svg class="h-4 w-4" fill="currentColor" height="24" stroke="none" viewbox="0 96 960 960" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M480 632 284 828q-11 11-28 11t-28-11q-11-11-11-28t11-28l196-196-196-196q-11-11-11-28t11-28q11-11 28-11t28 11l196 196 196-196q11-11 28-11t28 11q11 11 11 28t-11 28L536 576l196 196q11 11 11 28t-11 28q-11 11-28 11t-28-11L480 632Z"></path>
+</svg>
+</button>
+</aside>
+<main class="relative py-6 lg:gap-10 lg:py-8 xl:grid xl:grid-cols-[1fr_300px]">
+<div class="w-full min-w-0 mx-auto">
+<nav aria-label="breadcrumbs" class="flex items-center mb-4 space-x-1 text-sm text-muted-foreground">
+<a class="overflow-hidden text-ellipsis whitespace-nowrap hover:text-foreground" href="index.html">
+<span class="hidden md:inline">Home</span>
+<svg aria-label="Home" class="md:hidden" fill="currentColor" height="18" stroke="none" viewbox="0 96 960 960" width="18" xmlns="http://www.w3.org/2000/svg">
+<path d="M240 856h120V616h240v240h120V496L480 316 240 496v360Zm-80 80V456l320-240 320 240v480H520V696h-80v240H160Zm320-350Z"></path>
+</svg>
+</a>
+<div class="mr-1">/</div><span aria-current="page" class="font-medium text-foreground overflow-hidden text-ellipsis whitespace-nowrap">Master’s Thesis</span>
+</nav>
+<div id="content" role="main">
+<section id="master-s-thesis">
+<h1>Master’s Thesis</h1>
+<div class="thesis-header">
+<h2>Investigating Determinants of Birth Weight Using Bayesian Tree-Based Nonparametric Modeling</h2>
+<p><strong>Advisor:</strong> Dr. P. Richard Hahn, Department of Mathematical &amp; Statistical Sciences, Arizona State University</p>
+<p><strong>Defense Date:</strong> May 22nd, 2025</p>
+<div class="cv-buttons">
+<a class="button" href="https://github.com/adamkurth/dm-cart" target="_blank">View on GitHub</a>
+<a class="button" download="" href="_static/ms-kurth-thesis.pdf">Download Thesis (PDF)</a>
+</div>
+</div>
+<div class="thesis-overview">
+<h3>Abstract</h3>
+<p>Low birth weight (LBW) remains a critical public-health indicator, linked strongly with higher neonatal mortality, developmental delays, and lifelong chronic diseases. Using the 2021 U.S. Natality dataset (&gt; 3 million births), this thesis develops a Bayesian, tree-based, nonparametric framework that models the full birth weight distribution and quantifies LBW risk.</p>
+<p>The raw dataset is condensed into 128 mutually exclusive classes defined by seven dichotomous maternal-infant predictors and 11 birth weight categories, comprised of 10% LBW quantile categories plus one aggregated normal weight category for added LBW granularity. Classification and Regression Trees (CART) are grown using the marginal Dirichlet-Multinomial likelihood as the splitting criterion. This criterion is equipped to handle sparse observations, with the Dirichlet hyperparameters informed by previous quantiles from the 2020 dataset to avoid "double dipping".</p>
+<p>Employing a two-tier parametric bootstrap resampling technique, a 10,000 tree ensemble is grown yielding highly stable prediction estimates. Maternal race, smoking status, and marital status consistently drive the initial LBW risk stratification, identifying Black, smoking, unmarried mothers among the highest-risk subgroups. When the analysis is restricted to LBW births only, infant sex and maternal age supersede smoking and marital status as key discriminators, revealing finer biological gradients of risk. Ensemble predictions are well calibrated, and 95% bootstrap percentile intervals achieve nominal coverage.</p>
+<p>The resulting framework combines the interpretability of decision trees with Bayesian uncertainty quantification, delivering actionable, clinically relevant insights for targeting maternal-health interventions among the most vulnerable subpopulations.</p>
+<div class="thesis-visualizations">
+<h4>Key Visualizations</h4>
+<div class="visualization-container">
+<img alt="Aggregated Probiabilities for High vs. Low Risk (Full Model)" class="thesis-image" src="_static/images/thesis/high_low_risk_full.pdf"/>
+<p><em>Figure 1: Aggregated probabilities for high vs. low risk (full model) using the 2021 dataset.</em></p>
+</div>
+<div class="visualization-container">
+<img alt="Aggregated Probiabilities for High vs. Low Risk (LBW-only)" class="thesis-image" src="_static/images/thesis/high_low_risk_small.pdf"/>
+<p><em>Figure 2: Aggregated probabilities for high vs. low risk (LBW-only) using the 2021 dataset.</em></p>
+</div>
+<div class="visualization-container">
+<img alt="DM-CART Decision Tree" class="thesis-image" src="_static/images/thesis/dm_tree2021.pdf"/>
+<p><em>Figure 3: DM-CART decision tree structure for the 2021 dataset (Full Model).</em></p>
+</div>
+</div>
+<h3>Research Framework</h3>
+<p>My Master's thesis developed a novel Bayesian nonparametric framework called DM-CART (Dirichlet-Multinomial Classification and Regression Trees) to analyze birth weight distributions and predict low birth weight (LBW) risk. This innovative approach combines the interpretability of decision trees with the uncertainty quantification of Bayesian methods to provide actionable clinical insights for maternal health interventions.</p>
+<h3>Significance and Contribution</h3>
+<p>This research makes significant contributions to both methodological development and clinical applications:</p>
+<ul>
+<li><strong>Methodological:</strong> Extends traditional CART methodology with Dirichlet-Multinomial distributions for modeling count data with natural uncertainty quantification</li>
+<li><strong>Statistical:</strong> Demonstrates the effectiveness of two-tier parametric bootstrap for generating stable ensemble predictions with valid percentile intervals</li>
+<li><strong>Clinical:</strong> Provides actionable insights into maternal risk factors for low birth weight, aiding in early identification of at-risk pregnancies</li>
+<li><strong>Public Health:</strong> Offers targeted intervention strategies by identifying the most vulnerable demographic subgroups</li>
+</ul>
+<h3>Methodology</h3>
+<h4>Data Sources and Preparation</h4>
+<p>The study utilized U.S. Natality datasets from the National Center for Health Statistics (NCHS):</p>
+<ul>
+<li>2021 dataset (&gt;3 million births) for model development</li>
+<li>2020 dataset for informing Dirichlet priors and establishing quantile cutpoints</li>
+</ul>
+<p>Key variables were transformed into seven binary predictors, creating 128 distinct maternal-infant profiles:</p>
+<table class="predictor-table">
+<tr>
+<th>Variable</th>
+<th>Source</th>
+<th>Description</th>
+<th>Encoding</th>
+</tr>
+<tr>
+<td>BOY</td>
+<td><code>sex</code></td>
+<td>Infant sex</td>
+<td>1 = Male, 0 = Female</td>
+</tr>
+<tr>
+<td>MARRIED</td>
+<td><code>dmar</code></td>
+<td>Maternal marital status</td>
+<td>1 = Married, 0 = Not married</td>
+</tr>
+<tr>
+<td>BLACK</td>
+<td><code>mrace15</code></td>
+<td>Maternal race</td>
+<td>1 = Black only, 0 = Other</td>
+</tr>
+<tr>
+<td>OVER33</td>
+<td><code>mager</code></td>
+<td>Maternal age</td>
+<td>1 = Over 33 years, 0 = 33 years or younger</td>
+</tr>
+<tr>
+<td>HIGH SCHOOL</td>
+<td><code>meduc</code></td>
+<td>Maternal education</td>
+<td>1 = High school graduate, 0 = Other</td>
+</tr>
+<tr>
+<td>FULL PRENATAL</td>
+<td><code>precare5</code></td>
+<td>Prenatal care received</td>
+<td>1 = Full prenatal care, 0 = Less than full care</td>
+</tr>
+<tr>
+<td>SMOKER</td>
+<td><code>cig_0</code></td>
+<td>Smoking during pregnancy</td>
+<td>1 = Any smoking, 0 = No smoking</td>
+</tr>
+</table>
+<p>Birth weights were categorized into quantile-based categories to enable detailed analysis of the LBW region:</p>
+<ul>
+<li><strong>Type 1 Analysis:</strong> 10 quantile-based categories for low birth weight (≤2500g) plus 1 category for normal birth weight (&gt;2500g)</li>
+<li><strong>Type 2 Analysis:</strong> 10 quantile-based categories focusing exclusively on low birth weight distributions</li>
+</ul>
+<h4>Model Development: DM-CART</h4>
+<p>The DM-CART algorithm extends traditional CART methodology by incorporating the Dirichlet-Multinomial distribution to model count data across birth weight categories:</p>
+<div class="code-snippet">
+<pre><code class="r">log.dm.likelihood &lt;- function(counts, alpha = 1) {
+    # 'counts': an integer vector (n_1, ..., n_K)
+    # 'alpha':  Dirichlet hyperparameter vector
+
+    N &lt;- sum(counts)
+    K &lt;- length(counts)
+
+    # sum of alpha over all categories
+    alpha_0 &lt;- sum(alpha)
+
+    # Term 1: log Gamma(alpha_0) - log Gamma(N + alpha_0)
+    term1 &lt;- lgamma(alpha_0) - lgamma(N + alpha_0)
+
+    # Term 2: sum over k of [log Gamma(n_k + alpha) - log Gamma(alpha)]
+    term2 &lt;- sum(lgamma(counts + alpha) - lgamma(alpha))
+
+    # Total log-likelihood
+    ll &lt;- term1 + term2
+
+    return(ll)
+}</code></pre>
+</div>
+<p>Key components of the implementation include:</p>
+<ul>
+<li><strong>Custom <code>rpart</code> Method:</strong> Extended R's <code>rpart</code> package with specialized functions for initialization, evaluation, splitting, and prediction using the Dirichlet-Multinomial model</li>
+<li><strong>Splitting Criterion:</strong> Used marginal log-likelihood differences between splitting versus not splitting nodes</li>
+<li><strong>Informed Priors:</strong> Utilized 2020 data to establish quantile-based cutpoints and inform Dirichlet hyperparameters</li>
+<li><strong>Two-Tier Bootstrap:</strong> Implemented parametric bootstrap with 10,000 iterations for robust uncertainty quantification</li>
+</ul>
+<h3>Key Technical Components</h3>
+<h4>Tree Growing Process</h4>
+<p>The DM-CART algorithm follows these key steps:</p>
+<ol>
+<li>Initialize the tree with the complete dataset of 128 maternal-infant profiles</li>
+<li>Calculate the node-specific Dirichlet-Multinomial log-likelihood</li>
+<li>Evaluate potential splits based on likelihood ratio improvement</li>
+<li>Grow the tree to a specified depth (max depth = 8 in the primary analysis)</li>
+<li>Apply Dirichlet smoothing to the predicted probabilities</li>
+<li>Generate bootstrap ensembles for uncertainty quantification</li>
+</ol>
+<div class="code-snippet">
+<pre><code class="r">dm.method &lt;- list(
+    init=myinit,      # Initialize the DM tree
+    eval=myeval,      # Evaluate nodes with DM likelihood
+    split=mysplit,    # DM likelihood ratio splitting
+    pred=mypred,      # Prediction with Dirichlet smoothing
+    method="dm"
+)
+
+# Control parameters
+dm.control &lt;- rpart.control(
+    minsplit=2,    # Minimum observations for a split
+    cp=0,          # Complexity parameter
+    maxdepth=8,    # Maximum tree depth
+    xval=0         # No cross-validation
+)</code></pre>
+</div>
+<h3>Key Findings</h3>
+<h4>Risk Determinants</h4>
+<p>The research revealed several important insights about determinants of low birth weight risk:</p>
+<ul>
+<li><strong>Primary Risk Factors:</strong> Three variables consistently appeared at the top of the decision trees and had the highest variable importance scores:
+            <ul>
+<li>Maternal race (BLACK): Black mothers showed significantly higher LBW risk</li>
+<li>Smoking status (SMOKER): Maternal smoking during pregnancy strongly increased LBW risk</li>
+<li>Marital status (MARRIED): Unmarried mothers had elevated LBW risk</li>
+</ul>
+</li>
+<li><strong>High-Risk Profile:</strong> The highest-risk maternal-infant profile identified was:
+            <ul>
+<li>Black (BLACK=1)</li>
+<li>Unmarried (MARRIED=0)</li>
+<li>Smoker (SMOKER=1)</li>
+<li>Age ≤33 years (OVER33=0)</li>
+<li>Less than high school education (HIGH SCHOOL=0)</li>
+<li>Inadequate prenatal care (FULL PRENATAL=0)</li>
+<li>Female infant (BOY=0)</li>
+</ul>
+</li>
+<li><strong>LBW-Specific Analysis:</strong> When analyzing only LBW births (Type 2 analysis), different patterns emerged:
+            <ul>
+<li>Infant sex (BOY) became a more important discriminator</li>
+<li>Maternal age (OVER33) gained significance</li>
+<li>Smoking and marital status decreased in relative importance</li>
+</ul>
+</li>
+<li><strong>Risk Quantification:</strong> Bootstrap analysis provided well-calibrated estimates with 95% percentile intervals, allowing precise quantification of risk differences between subgroups</li>
+</ul>
+<h4>Statistical Validation</h4>
+<p>The DM-CART approach demonstrated excellent statistical properties:</p>
+<ul>
+<li><strong>Bootstrap Stability:</strong> Across 10,000 bootstrap samples, the key variables and tree structures showed high consistency</li>
+<li><strong>percentile Interval Coverage:</strong> 95% percentile intervals achieved nominal coverage in validation tests</li>
+<li><strong>Prediction Calibration:</strong> Predicted probabilities aligned well with observed frequencies</li>
+<li><strong>Variable Importance Stability:</strong> Consistent variable rankings across different tree depths and bootstrap iterations</li>
+</ul>
+<h3>Impact and Applications</h3>
+<p>This framework provides multiple benefits for clinical practice and public health:</p>
+<ul>
+<li><strong>Clinical Decision Support:</strong> The DM-CART model can be used to screen mothers early in pregnancy, identifying those at highest risk for delivering low birth weight infants</li>
+<li><strong>Intervention Targeting:</strong> Public health resources can be more effectively directed toward the identified high-risk subpopulations</li>
+<li><strong>Risk Communication:</strong> The tree structure allows for intuitive explanation of risk factors to patients and healthcare providers</li>
+<li><strong>Methodology Transfer:</strong> The DM-CART framework can be adapted to other clinical prediction contexts where count data and uncertainty quantification are important</li>
+<li><strong>Health Disparities Research:</strong> The model highlights demographic factors contributing to birth weight disparities, informing policy interventions</li>
+</ul>
+<h3>Technical Implementation</h3>
+<p>The full implementation of DM-CART consists of several interrelated R scripts:</p>
+<ul>
+<li><strong>quantile.R:</strong> Establishes quantile-based cutpoints and creates informed priors from the 2020 dataset</li>
+<li><strong>data_rebin.R:</strong> Preprocesses the 2021 dataset, creates the 128 maternal-infant profiles, and bins birth weights according to established quantiles</li>
+<li><strong>dm-cart.R:</strong> Implements the core DM-CART algorithm, including:
+            <ul>
+<li>Custom extension of <code>rpart</code> with Dirichlet-Multinomial likelihood functions</li>
+<li>Two-tier parametric bootstrap for uncertainty quantification</li>
+<li>Risk prediction and visualization</li>
+<li>Variable importance analysis</li>
+</ul>
+</li>
+</ul>
+<p>For complete technical details and code implementation, visit the <a href="https://github.com/adamkurth/dm-cart" target="_blank">GitHub repository</a>.</p>
+<h3>Committee</h3>
+<ul>
+<li><strong>Advisor:</strong> Dr. P. Richard Hahn, Department of Mathematical &amp; Statistical Sciences, Arizona State University</li>
+<li><strong>Committee Members:</strong>
+<ul>
+<li>Dr. Shuang Zhou, Department of Mathematical &amp; Statistical Sciences, Arizona State University</li>
+<li>Dr. Shiwei Lan, Department of Mathematical &amp; Statistical Sciences, Arizona State University</li>
+</ul>
+</li>
+</ul>
+<h3>Conclusion</h3>
+<p>The DM-CART framework represents a significant advancement in both methodological development and clinical application. By combining the interpretability of decision trees with the statistical rigor of Bayesian methods, this research delivers a powerful tool for maternal-infant risk stratification with potential for real-world clinical impact.</p>
+<p>This work demonstrates my ability to bridge sophisticated statistical methodology with practical healthcare applications, developing innovative solutions to complex public health challenges.</p>
+</div>
+<style>
+    .thesis-header {
+        margin-bottom: 2rem;
+        border-bottom: 1px solid #e9ecef;
+        padding-bottom: 1rem;
+    }
+
+    .thesis-overview {
+        margin-top: 2rem;
+    }
+
+    .thesis-image {
+        max-width: 100%;
+        height: auto;
+        margin: 1rem 0;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+
+    .thesis-overview h3 {
+        color: #0056b3;
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+        font-weight: 500;
+    }
+
+    .thesis-overview h4 {
+        color: #17a2b8;
+        margin-top: 1.5rem;
+        margin-bottom: 0.8rem;
+        font-weight: 500;
+    }
+
+    .thesis-overview ul {
+        margin-bottom: 1.5rem;
+    }
+
+    .thesis-overview li {
+        margin-bottom: 0.5rem;
+    }
+
+    code {
+        background-color: #f8f9fa;
+        padding: 2px 4px;
+        border-radius: 4px;
+        font-family: monospace;
+        font-size: 0.9em;
+    }
+
+    .cv-buttons {
+        margin: 1.5rem 0;
+    }
+
+    .cv-buttons .button {
+        margin-right: 0.5rem;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border: none;
+        background-color: #17a2b8;
+        color: white;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .cv-buttons .button:hover {
+        background-color: #138496;
+    }
+
+    .thesis-visualizations {
+        margin: 2rem 0;
+        padding: 1rem;
+        background-color: #f8f9fa;
+        border-radius: 5px;
+    }
+
+    .visualization-container {
+        margin-bottom: 1.5rem;
+    }
+
+    .visualization-container p {
+        font-style: italic;
+        color: #495057;
+        margin-top: 0.5rem;
+        text-align: center;
+    }
+
+    .code-snippet {
+        margin: 1.5rem 0;
+        background-color: #f8f9fa;
+        border-radius: 5px;
+        padding: 1rem;
+        overflow-x: auto;
+    }
+
+    .code-snippet pre {
+        margin: 0;
+    }
+
+    .code-snippet code {
+        font-family: 'Courier New', Courier, monospace;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .predictor-table {
+        width: 100%;
+        margin: 1.5rem 0;
+        border-collapse: collapse;
+    }
+
+    .predictor-table th, .predictor-table td {
+        padding: 0.5rem;
+        border: 1px solid #dee2e6;
+        text-align: left;
+    }
+
+    .predictor-table th {
+        background-color: #e9ecef;
+        font-weight: 600;
+    }
+
+    .predictor-table tr:nth-child(even) {
+        background-color: #f8f9fa;
+    }
+</style></section>
+</div></div>
+</main>
+</div>
+</div><footer class="py-6 border-t border-border md:py-0">
+<div class="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
+<div class="flex flex-col items-center gap-4 px-8 md:flex-row md:gap-2 md:px-0">
+<p class="text-sm leading-loose text-center text-muted-foreground md:text-left">© 2024, Adam Kurth Built with <a class="font-medium underline underline-offset-4" href="https://www.sphinx-doc.org" rel="noreferrer">Sphinx 7.2.6</a></p>
+</div>
+</div>
+</footer>
+</div>
+<script src="_static/documentation_options.js?v=5929fcd5"></script>
+<script src="_static/doctools.js?v=888ff710"></script>
+<script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+<script defer="defer" src="_static/theme.js?v=e8bd915e"></script>
+</body>
+</html>

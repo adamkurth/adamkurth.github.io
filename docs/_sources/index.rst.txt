@@ -7,13 +7,10 @@ Welcome to Adam's Website
 
     <div class="welcome-intro">
         <img src="_static/images/brown.jpeg" alt="Adam Kurth" style="float: right; margin-left: 30px; width: 300px; margin-bottom: 2rem;" />
-        <p style="margin-bottom: 2rem;">Hello, my name is Adam Kurth. I am an incoming Ph.D. student in Biostatistics at Brown University and a recent graduate of Arizona State University, where I earned both my B.S. in Mathematics (Statistics) and M.S. in Statistics through the accelerated 4+1 program.</p>
-
-        <p style="margin-bottom: 2rem;">My academic and research interests center around Bayesian statistics, causal inference, predictive modeling, and uncertainty quantification. I am particularly passionate about advancing medical imaging, organ matching, and clinical diagnostics through interpretable and data-driven methods.</p>
-
-        <p style="margin-bottom: 2rem;">Throughout my graduate studies, I’ve contributed to diverse research projects—from supervised and unsupervised NLP model development at NASA, to protein folding analysis using knot theory, to deep learning approaches for crystallographic image classification. My work bridges applied computation with foundational statistical theory.</p>
-
-        <p style="margin-bottom: 2rem;">Please feel free to explore my website to learn more about my research and professional journey. If you'd like to connect or collaborate, don’t hesitate to reach out through the <a href="contact.html">contact</a> page.</p>
+        <p style="margin-bottom: 2rem;">Hello, my name is Adam Kurth. I'm an incoming Ph.D. student in Biostatistics at Brown University and recently graduated with my Master's in Statistics from Arizona State University. My academic interests are rooted in biostatistics, Bayesian statistics, causal inference, predictive modeling, and uncertainty quantification.</p>
+        <p style="margin-bottom: 2rem;">My research focuses on developing rigorous theoretical and computational methodologies to address challenges in biostatistics and public health. I strive to advance statistical tools that bridge theory and application, ultimately improving patient outcomes and public health decision-making.</p>
+        <p style="margin-bottom: 2rem;">As a graduate student, I have worked on diverse research projects, including developing NLP/Language Models for NASA Mars mission task analysis, statistical models integrating knot theory for protein structure analysis, and deep learning tools for crystallography imaging data.</p>
+        <p style="margin-bottom: 2rem;">Feel free to explore my website to learn more about my research and professional journey. If you have any questions or would like to discuss potential collaborations, please don't hesitate to reach out through the <a href="contact.html">contact</a> page.</p>
     </div>
 
 .. raw:: html
@@ -26,5 +23,6 @@ Welcome to Adam's Website
 
    about
    research
+   thesis
    publications
    contact
