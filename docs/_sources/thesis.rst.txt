@@ -269,7 +269,7 @@ Master's Thesis
     <style>
         .thesis-header {
             margin-bottom: 2rem;
-            border-bottom: 1px solid #e9ecef;
+            border-bottom: 1px rgb(0, 0, 0) solid 1px;
             padding-bottom: 1rem;
         }
         
@@ -308,7 +308,7 @@ Master's Thesis
         }
         
         code {
-            background-color: #f8f9fa;
+            background-color: #000;
             padding: 2px 4px;
             border-radius: 4px;
             font-family: monospace;
@@ -338,7 +338,7 @@ Master's Thesis
         .thesis-visualizations {
             margin: 2rem 0;
             padding: 1rem;
-            background-color: #f8f9fa;
+            background-color: #495057;
             border-radius: 5px;
         }
         
@@ -355,7 +355,7 @@ Master's Thesis
         
         .code-snippet {
             margin: 1.5rem 0;
-            background-color: #f8f9fa;
+            background-color: #495057;
             border-radius: 5px;
             padding: 1rem;
             overflow-x: auto;
@@ -379,16 +379,16 @@ Master's Thesis
         
         .predictor-table th, .predictor-table td {
             padding: 0.5rem;
-            border: 1px solid #dee2e6;
+            border: 1px solid #495057;;
             text-align: left;
         }
         
         .predictor-table th {
-            background-color: #e9ecef;
+            background-color: #495057;;
             font-weight: 600;
         }
         
         .predictor-table tr:nth-child(even) {
-            background-color: #f8f9fa;
+            background-color:  #495057;
         }
     </style>
