@@ -117,15 +117,6 @@
 <p>Employing a two-tier parametric bootstrap resampling technique, a 10,000 tree ensemble is grown yielding highly stable prediction estimates. Maternal race, smoking status, and marital status consistently drive the initial LBW risk stratification, identifying Black, smoking, unmarried mothers among the highest-risk subgroups. When the analysis is restricted to LBW births only, infant sex and maternal age supersede smoking and marital status as key discriminators, revealing finer biological gradients of risk. Ensemble predictions are well calibrated, and 95% bootstrap percentile intervals achieve nominal coverage.</p>
 <p>The resulting framework combines the interpretability of decision trees with Bayesian uncertainty quantification, delivering actionable, clinically relevant insights for targeting maternal-health interventions among the most vulnerable subpopulations.</p>
 <div class="thesis-visualizations">
-<h4>Key Visualizations</h4>
-<div class="visualization-container">
-<img alt="Aggregated Probiabilities for High vs. Low Risk (Full Model)" class="thesis-image" src="_static/images/thesis/high_low_risk_full.pdf"/>
-<p><em>Figure 1: Aggregated probabilities for high vs. low risk (full model) using the 2021 dataset.</em></p>
-</div>
-<div class="visualization-container">
-<img alt="Aggregated Probiabilities for High vs. Low Risk (LBW-only)" class="thesis-image" src="_static/images/thesis/high_low_risk_small.pdf"/>
-<p><em>Figure 2: Aggregated probabilities for high vs. low risk (LBW-only) using the 2021 dataset.</em></p>
-</div>
 <div class="visualization-container">
 <img alt="DM-CART Decision Tree" class="thesis-image" src="_static/images/thesis/dm_tree2021.pdf"/>
 <p><em>Figure 3: DM-CART decision tree structure for the 2021 dataset (Full Model).</em></p>
@@ -344,7 +335,7 @@ dm.control &lt;- rpart.control(
 <style>
     .thesis-header {
         margin-bottom: 2rem;
-        border-bottom: 1px rgb(0, 0, 0) solid 1px;
+        border-bottom: 1px rgb(255, 255, 255) solid 1px;
         padding-bottom: 1rem;
     }
 
@@ -413,7 +404,7 @@ dm.control &lt;- rpart.control(
     .thesis-visualizations {
         margin: 2rem 0;
         padding: 1rem;
-        background-color:rgb(219, 219, 219);
+        background-color:rgb(162, 162, 162);
         border-radius: 5px;
     }
 
@@ -423,7 +414,7 @@ dm.control &lt;- rpart.control(
 
     .visualization-container p {
         font-style: italic;
-        color:rgb(199, 199, 199);
+        color:rgba(199, 199, 199, 0.92);
         margin-top: 0.5rem;
         text-align: center;
     }
