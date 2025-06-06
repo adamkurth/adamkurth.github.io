@@ -61,9 +61,27 @@ Publications and Presentations
             <p><span class="highlight">Affiliation:</span> CXFEL Labs, ASU Biodesign</p>
             <p><span class="highlight">Abstract:</span> Developed new Bragg peak integration techniques and noise-differentiation methods tailored to compact XFEL setups. This approach enables improved data accuracy in low-flux crystallography settings.</p>
             <div class="action-buttons">
-                <a href="_static/2024 BioXFEL Spring Symposium Abstract Revised.pdf" class="button" download>Download Abstract (PDF)</a>
-                <a href="_static/Kurth_BioXFEL2024.pdf" class="button" download>Download Presentation (PPTX)</a>
+                <button id="viewBioAbstractButton" class="button">View Abstract</button>
+                <button id="viewBioPresentationButton" class="button">View Presentation</button>
             </div>
+            <div id="bioAbstractContainer" style="display: none;">
+                <embed src="_static/2024 BioXFEL Spring Symposium Abstract Revised.pdf" type="application/pdf" width="100%" height="600px" />
+            </div>
+            <div id="bioPresentationContainer" style="display: none;">
+                <embed src="_static/Kurth_BioXFEL2024.pdf" type="application/pdf" width="100%" height="600px" />
+            </div>
+            <script>
+                document.getElementById('viewBioAbstractButton').addEventListener('click', function() {
+                    var container = document.getElementById('bioAbstractContainer');
+                    container.style.display = container.style.display === 'none' ? 'block' : 'none';
+                    document.getElementById('bioPresentationContainer').style.display = 'none';
+                });
+                document.getElementById('viewBioPresentationButton').addEventListener('click', function() {
+                    var container = document.getElementById('bioPresentationContainer');
+                    container.style.display = container.style.display === 'none' ? 'block' : 'none';
+                    document.getElementById('bioAbstractContainer').style.display = 'none';
+                });
+            </script>
 
             <h3>18th ICCBM – First Author</h3>
             <p><span class="highlight">Title:</span> "Data Analysis Tools for the Compact X-ray Light Source and Compact X-ray Free Electron Laser Facilities at ASU"</p>
@@ -78,8 +96,18 @@ Publications and Presentations
             <p><span class="highlight">Affiliation:</span> Biodesign Beus CXFEL Lab, ASU</p>
             <p><span class="highlight">Abstract:</span> Designed and benchmarked CNN architectures for Bragg peak prediction using simulated data from the CXLS beamline. Explored classification robustness under dynamic scattering conditions and low-flux regimes.</p>
             <div class="action-buttons">
-                <a href="_static/APM598_Final_Project_Report_Everett_Kurth.pdf" class="button" download>Download Report (PDF)</a>
+                <button id="viewReportButton" class="button">View Report</button>
             </div>
+            <div id="reportContainer" style="display: none;">
+                <embed src="_static/APM598_Final_Project_Report_Everett_Kurth.pdf" type="application/pdf" width="100%" height="600px" />
+            </div>
+            <script>
+                document.getElementById('viewReportButton').addEventListener('click', function() {
+                    var reportContainer = document.getElementById('reportContainer');
+                    reportContainer.style.display = reportContainer.style.display === 'none' ? 'block' : 'none';
+                });
+            </script>
+
 
             <h3>Presentations</h3>
 

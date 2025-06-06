@@ -153,9 +153,27 @@
 <p><span class="highlight">Affiliation:</span> CXFEL Labs, ASU Biodesign</p>
 <p><span class="highlight">Abstract:</span> Developed new Bragg peak integration techniques and noise-differentiation methods tailored to compact XFEL setups. This approach enables improved data accuracy in low-flux crystallography settings.</p>
 <div class="action-buttons">
-<a class="button" download="" href="_static/2024 BioXFEL Spring Symposium Abstract Revised.pdf">Download Abstract (PDF)</a>
-<a class="button" download="" href="_static/Kurth_BioXFEL2024.pdf">Download Presentation (PPTX)</a>
+<button class="button" id="viewBioAbstractButton">View Abstract</button>
+<button class="button" id="viewBioPresentationButton">View Presentation</button>
 </div>
+<div id="bioAbstractContainer" style="display: none;">
+<embed height="600px" src="_static/2024 BioXFEL Spring Symposium Abstract Revised.pdf" type="application/pdf" width="100%"/>
+</div>
+<div id="bioPresentationContainer" style="display: none;">
+<embed height="600px" src="_static/Kurth_BioXFEL2024.pdf" type="application/pdf" width="100%"/>
+</div>
+<script>
+            document.getElementById('viewBioAbstractButton').addEventListener('click', function() {
+                var container = document.getElementById('bioAbstractContainer');
+                container.style.display = container.style.display === 'none' ? 'block' : 'none';
+                document.getElementById('bioPresentationContainer').style.display = 'none';
+            });
+            document.getElementById('viewBioPresentationButton').addEventListener('click', function() {
+                var container = document.getElementById('bioPresentationContainer');
+                container.style.display = container.style.display === 'none' ? 'block' : 'none';
+                document.getElementById('bioAbstractContainer').style.display = 'none';
+            });
+        </script>
 <h3>18th ICCBM – First Author</h3>
 <p><span class="highlight">Title:</span> "Data Analysis Tools for the Compact X-ray Light Source and Compact X-ray Free Electron Laser Facilities at ASU"</p>
 <p><span class="highlight">Authors:</span> Kurth, A., Botha, S., Everett, E., Ketwala, G., Verlarde, A., Grant T. G., Kirian, R.</p>
@@ -168,8 +186,17 @@
 <p><span class="highlight">Affiliation:</span> Biodesign Beus CXFEL Lab, ASU</p>
 <p><span class="highlight">Abstract:</span> Designed and benchmarked CNN architectures for Bragg peak prediction using simulated data from the CXLS beamline. Explored classification robustness under dynamic scattering conditions and low-flux regimes.</p>
 <div class="action-buttons">
-<a class="button" download="" href="_static/APM598_Final_Project_Report_Everett_Kurth.pdf">Download Report (PDF)</a>
+<button class="button" id="viewReportButton">View Report</button>
 </div>
+<div id="reportContainer" style="display: none;">
+<embed height="600px" src="_static/APM598_Final_Project_Report_Everett_Kurth.pdf" type="application/pdf" width="100%"/>
+</div>
+<script>
+            document.getElementById('viewReportButton').addEventListener('click', function() {
+                var reportContainer = document.getElementById('reportContainer');
+                reportContainer.style.display = reportContainer.style.display === 'none' ? 'block' : 'none';
+            });
+        </script>
 <h3>Presentations</h3>
 <h4>NASA HRP Investigator's Workshop – Third Author</h4>
 <p><span class="highlight">Title:</span> "Large Language Models and Generative AI Tools to Depict Human Systems' Contribution to Spaceflight Tasks"</p>
