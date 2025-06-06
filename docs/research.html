@@ -101,12 +101,29 @@
 <div id="content" role="main">
 <section id="research-experience">
 <h1>Research Experience</h1>
+<div class="main-container">
+<div class="section-intro">
+<p>Explore my diverse research journey spanning computational biophysics, machine learning, and data science. Each role has contributed to my growth as a researcher and problem solver.</p>
+<div class="action-buttons">
+<button class="button" download="Adam_Kurth_CV.pdf" onclick="window.location.href='_static/CV.pdf'">Download CV</button>
+<button class="button" id="viewCVButton">View CV</button>
+</div>
+<div id="cvContainer" style="display: none;">
+<embed height="600px" src="_static/CV.pdf" type="application/pdf" width="100%"/>
+</div>
+<script>
+            document.getElementById('viewCVButton').addEventListener('click', function() {
+                var cvContainer = document.getElementById('cvContainer');
+                cvContainer.style.display = cvContainer.style.display === 'none' ? 'block' : 'none';
+            });
+        </script>
+</div>
 <div class="content-section">
 <h2><a href="https://math.la.asu.edu/" target="_blank">School of Mathematical and Statistical Sciences</a></h2>
 <div class="research-item">
 <p><span class="highlight">Role:</span> Research Assistant under <a href="https://www.elenipanagiotou.com" target="_blank">Dr. Eleni Panagiotou</a></p>
 <p><span class="highlight">Period:</span> January 2025 – May 2025</p>
-<p><span class="highlight">Description:</span> I collaborated with Dr. Panagiotou and Dr. Wenwei Zheng on a project aimed at learning how topological features change under varying conditions. This involved running simulations and analyzing the results to understand the implications of these changes on protein structure and function.</p>
+<p><span class="highlight">Description:</span> I collaborated with Dr. Panagiotou and Dr. Wenwei Zheng on a project aimed at learning how topological features change under varying conditions. This involved comprehensive analysis of simulations and their implications of changes on protein structure and function.</p>
 </div>
 </div>
 <div class="content-section">
@@ -130,7 +147,29 @@
 <div class="research-item">
 <p><span class="highlight">Role:</span> Intern, CHP-PRA Team</p>
 <p><span class="highlight">Period:</span> June 2024 – August 2024</p>
-<p><span class="highlight">Description:</span> Designed and led a complete NLP pipeline for Mars mission data classification under Dr. Mona Matar. Addressed multi-label imbalance using supervised and unsupervised learning to predict human system task categories for astronaut reliability planning.</p>
+<p><span class="highlight">Description:</span> Designed and led a complete NLP pipeline for Mars mission data classification under Dr. Mona Matar and Dr. Hunter Rehm. Addressed multi-label imbalance using supervised and unsupervised learning to predict human system task categories for astronaut reliability planning.</p>
+<div class="action-buttons">
+<button class="button" id="viewPosterButton">View Research Poster</button>
+<button class="button" id="viewAbstractButton">View Abstract</button>
+</div>
+<div id="posterContainer" style="display: none;">
+<embed height="600px" src="_static/IWS25-Kurth-Poster_final.pdf" type="application/pdf" width="100%"/>
+</div>
+<div id="abstractContainer" style="display: none;">
+<embed height="600px" src="_static/IWS25_AdamKurth.pdf" type="application/pdf" width="100%"/>
+</div>
+<script>
+        document.getElementById('viewPosterButton').addEventListener('click', function() {
+            var posterContainer = document.getElementById('posterContainer');
+            posterContainer.style.display = posterContainer.style.display === 'none' ? 'block' : 'none';
+            document.getElementById('abstractContainer').style.display = 'none';
+        });
+        document.getElementById('viewAbstractButton').addEventListener('click', function() {
+            var abstractContainer = document.getElementById('abstractContainer');
+            abstractContainer.style.display = abstractContainer.style.display === 'none' ? 'block' : 'none';
+            document.getElementById('posterContainer').style.display = 'none';
+        });
+        </script>
 </div>
 </div>
 <div class="content-section">
@@ -146,7 +185,7 @@
 </div>
 </div>
 </div>
-</section></div><div class="github-link" style="margin-top: 2rem; margin-bottom: 2rem;">
+</div><div class="github-link" style="margin-top: 2rem; margin-bottom: 2rem;">
 <p>For more of my work, follow me on GitHub:</p>
 <a href="https://github.com/adamkurth" style="display: inline-block;">
 <img alt="Follow on GitHub" src="https://img.shields.io/badge/Follow%20on%20GitHub-100000?style=for-the-badge&amp;logo=github&amp;logoColor=white" style="margin-right: 10px;"/>
@@ -184,12 +223,12 @@
     margin-bottom: 0.5rem;
 }
 
-.cv-buttons {
+.action-buttons {
     margin-bottom: 1rem;
 }
 
-.cv-buttons .button,
-.cv-buttons button {
+.action-buttons .button,
+.action-buttons button {
     margin-right: 0.5rem;
     text-decoration: none;
     padding: 0.5rem 1rem;
@@ -201,8 +240,8 @@
     transition: background-color 0.3s ease; /* Smooth background color transition */
 }
 
-.cv-buttons a.button:hover,
-.cv-buttons button:hover {
+.actionv-buttons a.button:hover,
+.action-buttons button:hover {
     background-color: #138496; /* Darker shade on hover */
     text-decoration: none; /* No underline on hover */
 }
@@ -214,8 +253,9 @@
 
 </style>
 <p>
-<p>To explore more about these projects, visit the project-specific links or reach out directly via the contact details provided on the site.</p>
-</p></div></main></div>
+<p>To explore more about these projects, visit the project-specific links or reach out directly via the contact details provided on the site.</p></p></section>
+</div></div>
+</main>
 </div>
 </div><footer class="py-6 border-t border-border md:py-0">
 <div class="container flex flex-col items-center justify-between gap-4 md:h-24 md:flex-row">
@@ -224,6 +264,7 @@
 </div>
 </div>
 </footer>
+</div>
 <script src="_static/documentation_options.js?v=5929fcd5"></script>
 <script src="_static/doctools.js?v=888ff710"></script>
 <script src="_static/sphinx_highlight.js?v=dc90522c"></script>

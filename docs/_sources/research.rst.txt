@@ -2,20 +2,30 @@ Research Experience
 ===================
 
 .. raw:: html
-    <div class="main-container">
+
+    <div class="main-container">    
         <div class="section-intro">
-            <p>I have a diverse portfolio of research experiences spanning bioinformatics, protein structure analysis, computational crystallography, NLP, and deep learning. Below is an overview of my key research positions. For more details, please download my full CV.</p>
-            <div class="cv-buttons">
-                <a href="_static/CV.pdf" class="button" download="Adam_Kurth_CV.pdf">Download CV</a>
+            <p>Explore my diverse research journey spanning computational biophysics, machine learning, and data science. Each role has contributed to my growth as a researcher and problem solver.</p>
+            <div class="action-buttons">
+                <button class="button" onclick="window.location.href='_static/CV.pdf'" download="Adam_Kurth_CV.pdf">Download CV</button>
+                <button id="viewCVButton" class="button">View CV</button>
             </div>
+            <div id="cvContainer" style="display: none;">
+                <embed src="_static/CV.pdf" type="application/pdf" width="100%" height="600px" />
+            </div>
+            <script>
+                document.getElementById('viewCVButton').addEventListener('click', function() {
+                    var cvContainer = document.getElementById('cvContainer');
+                    cvContainer.style.display = cvContainer.style.display === 'none' ? 'block' : 'none';
+                });
+            </script>
         </div>
-        
         <div class="content-section">
             <h2><a href="https://math.la.asu.edu/" target="_blank">School of Mathematical and Statistical Sciences</a></h2>
             <div class="research-item">
                 <p><span class="highlight">Role:</span> Research Assistant under <a href="https://www.elenipanagiotou.com" target="_blank">Dr. Eleni Panagiotou</a></p>
                 <p><span class="highlight">Period:</span> January 2025 – May 2025</p>
-                <p><span class="highlight">Description:</span> I collaborated with Dr. Panagiotou and Dr. Wenwei Zheng on a project aimed at learning how topological features change under varying conditions. This involved running simulations and analyzing the results to understand the implications of these changes on protein structure and function.</p>
+                <p><span class="highlight">Description:</span> I collaborated with Dr. Panagiotou and Dr. Wenwei Zheng on a project aimed at learning how topological features change under varying conditions. This involved comprehensive analysis of simulations and their implications of changes on protein structure and function.</p>
             </div>
         </div>
 
@@ -36,13 +46,34 @@ Research Experience
                 <p><span class="highlight">Description:</span> Sole researcher on podcast sentiment analysis in the context of the 2024 presidential election. I presented findings, managed databases, ran models, and prepared research for publication, contributing to ASU health and policy initiatives.</p>
             </div>
         </div>
-
         <div class="content-section">
             <h2><a href="https://www.nasa.gov/glenn" target="_blank">NASA Glenn Research Center (GRC)</a></h2>
             <div class="research-item">
-                <p><span class="highlight">Role:</span> Intern, CHP-PRA Team</p>
-                <p><span class="highlight">Period:</span> June 2024 – August 2024</p>
-                <p><span class="highlight">Description:</span> Designed and led a complete NLP pipeline for Mars mission data classification under Dr. Mona Matar. Addressed multi-label imbalance using supervised and unsupervised learning to predict human system task categories for astronaut reliability planning.</p>
+            <p><span class="highlight">Role:</span> Intern, CHP-PRA Team</p>
+            <p><span class="highlight">Period:</span> June 2024 – August 2024</p>
+            <p><span class="highlight">Description:</span> Designed and led a complete NLP pipeline for Mars mission data classification under Dr. Mona Matar and Dr. Hunter Rehm. Addressed multi-label imbalance using supervised and unsupervised learning to predict human system task categories for astronaut reliability planning.</p>
+            <div class="action-buttons">
+            <button id="viewPosterButton" class="button">View Research Poster</button>
+            <button id="viewAbstractButton" class="button">View Abstract</button>
+            </div>
+            <div id="posterContainer" style="display: none;">
+            <embed src="_static/IWS25-Kurth-Poster_final.pdf" type="application/pdf" width="100%" height="600px" />
+            </div>
+            <div id="abstractContainer" style="display: none;">
+            <embed src="_static/IWS25_AdamKurth.pdf" type="application/pdf" width="100%" height="600px" />
+            </div>
+            <script>
+            document.getElementById('viewPosterButton').addEventListener('click', function() {
+                var posterContainer = document.getElementById('posterContainer');
+                posterContainer.style.display = posterContainer.style.display === 'none' ? 'block' : 'none';
+                document.getElementById('abstractContainer').style.display = 'none';
+            });
+            document.getElementById('viewAbstractButton').addEventListener('click', function() {
+                var abstractContainer = document.getElementById('abstractContainer');
+                abstractContainer.style.display = abstractContainer.style.display === 'none' ? 'block' : 'none';
+                document.getElementById('posterContainer').style.display = 'none';
+            });
+            </script>
             </div>
         </div>
 
@@ -109,12 +140,12 @@ Research Experience
         margin-bottom: 0.5rem;
     }
 
-    .cv-buttons {
+    .action-buttons {
         margin-bottom: 1rem;
     }
 
-    .cv-buttons .button,
-    .cv-buttons button {
+    .action-buttons .button,
+    .action-buttons button {
         margin-right: 0.5rem;
         text-decoration: none;
         padding: 0.5rem 1rem;
@@ -126,8 +157,8 @@ Research Experience
         transition: background-color 0.3s ease; /* Smooth background color transition */
     }
 
-    .cv-buttons a.button:hover,
-    .cv-buttons button:hover {
+    .actionv-buttons a.button:hover,
+    .action-buttons button:hover {
         background-color: #138496; /* Darker shade on hover */
         text-decoration: none; /* No underline on hover */
     }

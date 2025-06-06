@@ -10,7 +10,7 @@ Welcome to Adam's Website
         <p style="margin-bottom: 2rem;">Hello, my name is Adam Kurth. I'm an incoming Ph.D. student in Biostatistics at Brown University and recently graduated with my Master's in Statistics from Arizona State University. My academic interests are rooted in biostatistics, Bayesian statistics, causal inference, predictive modeling, and uncertainty quantification.</p>
         <p style="margin-bottom: 2rem;">My research focuses on developing rigorous theoretical and computational methodologies to address challenges in biostatistics and public health. I strive to advance statistical tools that bridge theory and application, ultimately improving patient outcomes and public health decision-making.</p>
         <p style="margin-bottom: 2rem;">As a graduate student, I have worked on diverse research projects, including developing NLP/Language Models for NASA Mars mission task analysis, statistical models integrating knot theory for protein structure analysis, and deep learning tools for crystallography imaging data.</p>
-        <p style="margin-bottom: 2rem;">Feel free to explore my website to learn more about my research and professional journey. If you have any questions or would like to discuss potential collaborations, please don't hesitate to reach out through the <a href="contact.html">contact</a> page.</p>
+        <p style="margin-bottom: 2rem;">I am actively seeking international research opportunities and collaborations, and welcome connections with researchers worldwide. Feel free to explore my website to learn more about my research and professional journey. If you have any questions or would like to discuss potential collaborations, please don't hesitate to reach out through the <a href="contact.html">contact</a> page.</p>
     </div>
 
 .. raw:: html
@@ -18,11 +18,12 @@ Welcome to Adam's Website
     <img src="_static/images/nasa/nasa-1.png" alt="NASA" style="display: block; margin: 2rem auto; width: 100%; max-width: 500px;" />
 
 .. toctree::
-   :maxdepth: 2
-   :caption: Contents:
+    :maxdepth: 2
+    :caption: Contents:
+    :hidden:
 
-   about
-   research
-   thesis
-   publications
-   contact
+    about
+    research
+    thesis
+    publications
+    contact

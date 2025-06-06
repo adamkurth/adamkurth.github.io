@@ -12,41 +12,50 @@ Publications and Presentations
             <p><span class="highlight">Status:</span> In preparation</p>
             <p><span class="highlight">Role:</span> Led data collection, simulation design, and comparative analysis under supervision of Yi Zheng and Mark Reiser</p>
             <p><span class="highlight">Description:</span> This study assesses the relative estimation accuracy of leading IRT software packages using simulation studies to inform psychometric modeling best practices. I designed simulations, developed preprocessing tools, and visualized RMSE and bias across all subjects.</p>
-
-            <h3>18th ICCBM – First Author</h3>
-            <p><span class="highlight">Title:</span> "Data Analysis Tools for the Compact X-ray Light Source and Compact X-ray Free Electron Laser Facilities at ASU"</p>
-            <p><span class="highlight">Authors:</span> Kurth, A., Botha, S., Everett, E., Ketwala, G., Verlarde, A., Grant T. G., Kirian, R.</p>
-            <p><span class="highlight">Conference:</span> 18th International Conference for the Crystallization of Biological Macromolecules (ICCBM)</p>
-            <p><span class="highlight">Date:</span> October 2024</p>
-            <p><span class="highlight">Description:</span> Presented novel tools for femtosecond crystallography data analysis at CXLS and CXFEL. Our framework enhances structure determination efficiency through algorithmic innovation.</p>
         </div>
     </div>
 
-    
     <div class="project-entry">
         <div class="project-description">
-        <h2>Presentations</h2>
+        <h2>Presentations & Conferences</h2>
 
-            <h3>NASA HRP Investigator's Workshop – First Author, Poster</h3>
+            <h3>Research Posters</h3>
+            
+            <h4>JSM 2025 – First Author</h4>
+            <p><span class="highlight">Title:</span> "Developing Natural Language Processing and Supervised Machine Learning Techniques to Classify Mars Tasks"</p>
+            <p><span class="highlight">Date:</span> August 2025</p>
+            <p><span class="highlight">Authors:</span> Kurth, A., Rehm, H., Matar, M.</p>
+            <p><span class="highlight">Description:</span> Will present research on NLP applications for Mars mission task classification at Joint Statistical Meetings 2025.</p>
+
+            <h4>NASA HRP Investigator's Workshop – First Author</h4>
             <p><span class="highlight">Title:</span> "Developing Natural Language Processing and Supervised Machine Learning Techniques to Classify Mars Tasks"</p>
             <p><span class="highlight">Date:</span> January 2025</p>
             <p><span class="highlight">Authors:</span> Kurth, A., Rehm, H., Matar, M.</p>
             <p><span class="highlight">Affiliation:</span> NASA Glenn Research Center, CHP-PRA</p>
-            <p><span class="highlight">Abstract:</span> Presented an NLP framework to address imbalanced multilabel classification for Mars mission data. Our approach improves human systems task categorization for future spaceflight planning.</p>
+            <div class="poster-buttons">
+                <button id="viewPosterButton" class="button">View Research Poster</button>
+                <button id="viewAbstractButton" class="button">View Abstract</button>
+            </div>
+            <div id="posterContainer" style="display: none;">
+                <embed src="_static/IWS25-Kurth-Poster_final.pdf" type="application/pdf" width="100%" height="600px" />
+            </div>
+            <div id="abstractContainer" style="display: none;">
+                <embed src="_static/IWS25_AdamKurth.pdf" type="application/pdf" width="100%" height="600px" />
+            </div>
+            <script>
+                document.getElementById('viewPosterButton').addEventListener('click', function() {
+                    var posterContainer = document.getElementById('posterContainer');
+                    posterContainer.style.display = posterContainer.style.display === 'none' ? 'block' : 'none';
+                    document.getElementById('abstractContainer').style.display = 'none';
+                });
+                document.getElementById('viewAbstractButton').addEventListener('click', function() {
+                    var abstractContainer = document.getElementById('abstractContainer');
+                    abstractContainer.style.display = abstractContainer.style.display === 'none' ? 'block' : 'none';
+                    document.getElementById('posterContainer').style.display = 'none';
+                });
+            </script>
 
-            <h3>NASA HRP Investigator's Workshop – Third Author</h3>
-            <p><span class="highlight">Title:</span> "Large Language Models and Generative AI Tools to Depict Human Systems’ Contribution to Spaceflight Tasks"</p>
-            <p><span class="highlight">Date:</span> January 2025</p>
-            <p><span class="highlight">Authors:</span> Matar, M., Rehm, H., Kurth, A.</p>
-            <p><span class="highlight">Affiliation:</span> NASA Glenn Research Center</p>
-
-            <h3>NASA CHP-PRA Research Discussion – Presenter</h3>
-            <p><span class="highlight">Title:</span> "Using Natural Language Processing AI Tools to Analyze Mars Tasks"</p>
-            <p><span class="highlight">Date:</span> August 2024</p>
-            <p><span class="highlight">Authors:</span> Kurth, A., Rehm, H., Matar, M.</p>
-            <p><span class="highlight">Description:</span> Led the presentation on applying LLMs to mission task documentation using both supervised and unsupervised learning models.</p>
-
-            <h3>BioXFEL Spring Symposium – Poster <a href="https://github.com/adamkurth/waterbackground_subtraction"><img src="_static/images/github-logo.png" alt="GitHub" class="github-logo" /></a></h3>
+            <h3>BioXFEL Spring Symposium <a href="https://github.com/adamkurth/waterbackground_subtraction"><img src="_static/images/github-logo.png" alt="GitHub" class="github-logo" /></a></h3>
             <p><span class="highlight">Title:</span> "Peak Intensity Analysis for Serial Femtosecond Crystallography Experiments at the Compact X-ray Light Source"</p>
             <p><span class="highlight">Authors:</span> Kurth, A., Botha, S.</p>
             <p><span class="highlight">Affiliation:</span> CXFEL Labs, ASU Biodesign</p>
@@ -56,7 +65,14 @@ Publications and Presentations
                 <a href="_static/Kurth_BioXFEL2024.pdf" class="button" download>Download Presentation (PPTX)</a>
             </div>
 
-            <h3>CXLS Deep Learning Report – Poster <a href="https://github.com/adamkurth/cxls_hitfinder"><img src="_static/images/github-logo.png" alt="GitHub" class="github-logo" /></a></h3>
+            <h3>18th ICCBM – First Author</h3>
+            <p><span class="highlight">Title:</span> "Data Analysis Tools for the Compact X-ray Light Source and Compact X-ray Free Electron Laser Facilities at ASU"</p>
+            <p><span class="highlight">Authors:</span> Kurth, A., Botha, S., Everett, E., Ketwala, G., Verlarde, A., Grant T. G., Kirian, R.</p>
+            <p><span class="highlight">Conference:</span> 18th International Conference for the Crystallization of Biological Macromolecules (ICCBM)</p>
+            <p><span class="highlight">Date:</span> October 2024</p>
+            <p><span class="highlight">Description:</span> Presented novel tools for femtosecond crystallography data analysis at CXLS and CXFEL. Our framework enhances structure determination efficiency through algorithmic innovation.</p>
+
+            <h3>CXLS Hitfinder Project <a href="https://github.com/adamkurth/cxls_hitfinder"><img src="_static/images/github-logo.png" alt="GitHub" class="github-logo" /></a></h3>
             <p><span class="highlight">Title:</span> "Enhancing X-ray Peakfinding Through Deep Learning at the Compact X-ray Light Source (CXLS)"</p>
             <p><span class="highlight">Authors:</span> Kurth, A., Everett, E., Botha, S.</p>
             <p><span class="highlight">Affiliation:</span> Biodesign Beus CXFEL Lab, ASU</p>
@@ -64,9 +80,22 @@ Publications and Presentations
             <div class="cv-buttons">
                 <a href="_static/APM598_Final_Project_Report_Everett_Kurth.pdf" class="button" download>Download Report (PDF)</a>
             </div>
+
+            <h3>Presentations</h3>
+
+            <h4>NASA HRP Investigator's Workshop – Third Author</h4>
+            <p><span class="highlight">Title:</span> "Large Language Models and Generative AI Tools to Depict Human Systems' Contribution to Spaceflight Tasks"</p>
+            <p><span class="highlight">Date:</span> January 2025</p>
+            <p><span class="highlight">Authors:</span> Matar, M., Rehm, H., Kurth, A.</p>
+            <p><span class="highlight">Affiliation:</span> NASA Glenn Research Center</p>
+
+            <h4>NASA CHP-PRA Research Discussion – Presenter</h4>
+            <p><span class="highlight">Title:</span> "Using Natural Language Processing AI Tools to Analyze Mars Tasks"</p>
+            <p><span class="highlight">Date:</span> August 2024</p>
+            <p><span class="highlight">Authors:</span> Kurth, A., Rehm, H., Matar, M.</p>
+            <p><span class="highlight">Description:</span> Led the presentation on applying LLMs to mission task documentation using both supervised and unsupervised learning models.</p>
         </div>
     </div>
-
 
 
     <style>
@@ -128,4 +157,27 @@ Publications and Presentations
         line-height: 1.6; /* Improved readability */
         margin-bottom: 0.5rem;
     }
+        .poster-buttons {
+        margin-bottom: 1rem;
+    }
+
+    .poster-buttons .button,
+    .poster-buttons button {
+        margin-right: 0.5rem;
+        text-decoration: none;
+        padding: 0.5rem 1rem;
+        border: none;
+        background-color: #17a2b8; /* Bootstrap's info color for a change */
+        color: white;
+        border-radius: 0.25rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease; /* Smooth background color transition */
+    }
+
+    .posterv-buttons a.button:hover,
+    .poster-buttons button:hover {
+        background-color: #138496; /* Darker shade on hover */
+        text-decoration: none; /* No underline on hover */
+    }
+
     </style>

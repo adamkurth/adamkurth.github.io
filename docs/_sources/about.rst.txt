@@ -5,7 +5,7 @@ About
 
     <div class="section-intro">
         <img src="_static/images/42242_SB11.JPG" alt="Adam Kurth" class="inline-photo" />
-        <p>I am an incoming Ph.D. student in Biostatistics at Brown University, with academic training in mathematics, statistics, and computational methods. I recently completed a B.S. in Mathematics (Statistics) and am currently finishing an accelerated M.S. in Statistics at Arizona State University. My research spans Bayesian modeling, causal inference, machine learning, and applications in biomedicine—particularly in neuroimaging, protein structure analysis, and clinical diagnostics. I am especially drawn to problems in predictive modeling, uncertainty quantification, and statistical decision-making in public health and medicine.</p>
+        <p>I am an incoming Ph.D. student in Biostatistics at Brown University, with academic training in mathematics, statistics, and computational methods. I have recently competed my M.S. in Statistics at Arizona State University, on the accelerated academic track. My B.S. is in Mathematics (Statistics) also at Arizona State University. My research spans Bayesian modeling, causal inference, machine learning, and applications in biomedicine—particularly in neuroimaging, protein structure analysis, and clinical diagnostics. I am especially drawn to problems in public health, epidemiology, predictive modeling, uncertainty quantification, and statistical decision-making. I am eager to seek international opportunities and collaborations in these research areas.</p>
     </div>
 
 .. raw:: html
@@ -81,12 +81,12 @@ About
     <div class="project-entry">
         <div class="project-description">
             <h3>Skills and Interests</h3>
-            <p><span class="highlight">Statistical Methods:</span> Bayesian inference, causal inference, regression, GLMs, survival analysis, NLP, machine learning.</p>
-            <p><span class="highlight">Mathematics:</span> Real analysis, topology (knot theory), numerical methods, probability, linear algebra.</p>
-            <p><span class="highlight">Programming:</span> Python, R, Bash, LaTeX, MATLAB, Java, Linux/CLI.</p>
+            <p><span class="highlight">Statistical Methods:</span> Bayesian inference, causal inference, nonparametrics, regression, survival analysis, NLP, machine learning.</p>
+            <p><span class="highlight">Mathematics:</span> Real analysis, numerical methods, probability, linear algebra, geometry.</p>
+            <p><span class="highlight">Programming:</span> Python, R, Bash, LaTeX, MATLAB, Linux/CLI, Java.</p>
             <p><span class="highlight">Tools:</span> PyTorch, Scikit-Learn, Git, Sphinx, Tableau, Plotly, ggplot2.</p>
-            <p><span class="highlight">Research Areas:</span> Biostatistics, neuroimaging, protein folding, statistical computing, medical diagnostics, public health.</p>
-            <p>Outside research, I enjoy public speaking, reading philosophy, running, meditation, and guitar.</p>
+            <p><span class="highlight">Research Areas:</span> Biostatistics, Bayesian inference, nonparametrics, statistical computing, decision-making, epidemiology, and public health.</p>
+            <p>Outside research, I enjoy public speaking, reading philosophy and classical literature, running, meditation, and guitar.</p>
         </div>
     </div>
 
@@ -97,24 +97,23 @@ About
             <p><span class="highlight">2023:</span> Pediatric Cancer Research Foundation Scholar, Coats & Todd Overcoming Disability Scholar, Ruth Cheatham Foundation, HPFY Scholar</p>
             <p><span class="highlight">2022:</span> Burress Foundation Underdog Scholar, Luttrell Children’s Network Scholar</p>
             <p><span class="highlight">2021:</span> ASU Alumni Legacy Scholar</p>
-            <p><span class="highlight">Degrees:</span> B.S. in Mathematics (Statistics), Summa Cum Laude; currently pursuing M.S. in Statistics (4+1 Program)</p>
-            <p><span class="highlight">Dean's List:</span> Fall 2022 – Present</p>
+            <p><span class="highlight">Degrees:</span> B.S. in Mathematics (Statistics), Summa Cum Laude, August 2024; M.S. in Statistics (4+1 Program, academic track), May 2025</p>
         </div>
     </div>
 
     <div class="project-entry">
         <div class="project-description">
             <h3>Vision for the Future</h3>
-            <p>As I begin my Ph.D. in Biostatistics, I aim to advance flexible and interpretable Bayesian methods for real-world health applications. My goal is to bridge theory and practice in service of population health and clinical decision-making, while mentoring the next generation of statistical scientists.</p>
+            <p>As I begin my Ph.D. in Biostatistics, I aim to advance flexible and interpretable Bayesian methods for real-world health applications. My goal is to bridge theory and practice in service of population health and clinical decision-making, while exploring international opportunities and mentoring the next generation of statistical scientists.</p>
         </div>
     </div>
 
 .. raw:: html
 
     <div class="section-intro">
-        <p>For a more comprehensive overview, download the full CV below:</p>
-        <div class="cv-buttons">
-            <a href="_static/CV.pdf" class="button" download="Adam_Kurth_CV.pdf">Download CV</a>
+        <p>For a more comprehensive overview, download or view my CV below:</p>
+        <div class="action-buttons">
+            <button class="button" onclick="window.location.href='_static/CV.pdf'" download="Adam_Kurth_CV.pdf">Download CV</button>
             <button id="viewCVButton" class="button">View CV</button>
         </div>
         <div id="cvContainer" style="display: none;">
@@ -152,13 +151,6 @@ About
         text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1); /* subtle shadow for depth */
     }
 
-    .. .project-entry {
-    ..     margin-bottom: 0.5rem;
-    ..     display: flex;
-    ..     justify-content: space-between;
-    ..     align-items: flex-start;
-    .. }
-
     .project-description h3 {
         display: flex;
         justify-content: space-between;
@@ -178,25 +170,25 @@ About
         line-height: 1.6; /* Improved readability */
         margin-bottom: 0.5rem;
     }
-    .cv-buttons {
-        margin-bottom: 1rem; /* Unchanged, ensures space above CV buttons */
+    .action-buttons {
+        margin-bottom: 1rem;
     }
 
-    .cv-buttons .button,
-    .cv-buttons button {
-        margin-right: 0.5rem; /* Unchanged */
+    .action-buttons .button,
+    .action-buttons button {
+        margin-right: 0.5rem;
         text-decoration: none;
-        padding: 0.5rem 1rem; /* Unchanged */
+        padding: 0.5rem 1rem;
         border: none;
-        background-color: #17a2b8; /* Unchanged */
+        background-color: #17a2b8; /* Bootstrap's info color for a change */
         color: white;
-        border-radius: 0.25rem; /* Unchanged */
+        border-radius: 0.25rem;
         cursor: pointer;
-        transition: background-color 0.3s ease; /* Unchanged */
+        transition: background-color 0.3s ease; /* Smooth background color transition */
     }
 
-    .cv-buttons a.button:hover,
-    .cv-buttons button:hover {
+    .actionv-buttons a.button:hover,
+    .action-buttons button:hover {
         background-color: #138496; /* Darker shade on hover */
         text-decoration: none; /* No underline on hover */
     }
@@ -212,11 +204,6 @@ About
 
     h3 {
         margin-top: 1rem; /* Reduced space above headings */
-    }
-
-    .cv-buttons {
-        margin-top: 1rem; /* Adds space above the CV buttons */
-        margin-bottom: 1rem; /* Adds space below the CV buttons */
     }
 
 
